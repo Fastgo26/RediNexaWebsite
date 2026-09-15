@@ -1,0 +1,363 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RediNexa - Smart Deals, Products & Apps</title>
+
+  <meta name="description" content="RediNexa brings you useful products, smart deals, apps and services in one place.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #1769e0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #1769e0;
+    }
+
+    .hero {
+      max-width: 1150px;
+      margin: auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #1769e0;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #5f6878;
+      font-size: 19px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .primary {
+      background: #1769e0;
+      color: white;
+    }
+
+    .secondary {
+      background: white;
+      color: #1769e0;
+      border: 1px solid #1769e0;
+    }
+
+    section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .card .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #667085;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      color: #1769e0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .about {
+      background: white;
+      border-radius: 20px;
+      padding: 45px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      margin-top: 50px;
+    }
+
+    .footer-inner {
+      max-width: 1150px;
+      margin: auto;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .copyright {
+      margin-top: 20px;
+      color: #aeb6c4;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">RediNexa</div>
+
+    <nav>
+      <a href="#deals">Deals</a>
+      <a href="#apps">Apps</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Discover More with <span>RediNexa</span></h1>
+
+    <p>
+      Discover useful products, smart deals, apps and services
+      — all in one place.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#deals">Explore Deals</a>
+      <a class="btn secondary" href="#apps">Our Apps</a>
+    </div>
+  </div>
+
+
+  <section id="deals">
+    <h2 class="section-title">Featured Deals</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🛒</div>
+        <h3>Smart Products</h3>
+        <p>Discover useful products selected for everyday life.</p>
+        <a href="#">View Products →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Best Deals</h3>
+        <p>Find interesting offers and products from trusted stores.</p>
+        <a href="#">See Deals →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">⭐</div>
+        <h3>Top Picks</h3>
+        <p>Explore products and recommendations worth checking.</p>
+        <a href="#">Explore Picks →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="apps">
+    <h2 class="section-title">Our Apps</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>RediJob</h3>
+        <p>
+          A platform designed to connect workers and employers.
+        </p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>RediNexa Apps</h3>
+        <p>
+          More useful apps and digital tools coming soon.
+        </p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌍</div>
+        <h3>Built for Europe</h3>
+        <p>
+          Useful digital products and services for people across Europe.
+        </p>
+        <a href="#">Discover More →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">💼</div>
+        <h3>Digital Services</h3>
+        <p>Discover our upcoming digital services and projects.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💡</div>
+        <h3>Useful Ideas</h3>
+        <p>Simple tools, products and ideas designed to help people.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Growing Platform</h3>
+        <p>RediNexa will continue growing with new products and services.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="about">
+      <h2 class="section-title">About RediNexa</h2>
+
+      <p>
+        RediNexa is a growing digital platform focused on useful
+        products, affiliate recommendations, apps, deals and services.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="footer-inner">
+
+    <strong>RediNexa</strong>
+
+    <p style="margin-top: 15px;">
+      Products • Deals • Apps • Services
+    </p>
+
+    <p style="margin-top: 15px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="copyright">
+      © 2026 RediNexa. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
