@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RediNexa | Smart Deals, Products, Apps & Services</title>
+  <title>RediNexa – Products, Travel, Apps & Services</title>
 
   <meta name="description"
-        content="RediNexa helps you discover useful products, smart deals, apps and digital services.">
+        content="RediNexa – Discover useful products, travel deals, apps, services and more.">
 
   <style>
     * {
@@ -21,258 +21,260 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #172033;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      background: #f5f7fb;
+      color: #222;
     }
 
     header {
-      background: white;
-      border-bottom: 1px solid #e5e7eb;
+      background: #111827;
+      color: white;
+      padding: 16px 5%;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    .nav {
-      max-width: 1150px;
+    nav {
+      max-width: 1200px;
       margin: auto;
-      padding: 16px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     .logo {
-      font-size: 29px;
-      font-weight: 800;
-      color: #1769e0;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
       text-decoration: none;
     }
 
-    nav {
+    .logo span {
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
       display: flex;
-      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
     }
 
     nav a {
+      color: white;
       text-decoration: none;
-      color: #333;
-      margin-left: 24px;
       font-weight: 600;
     }
 
     nav a:hover {
-      color: #1769e0;
+      color: #38bdf8;
     }
 
     .hero {
-      background: white;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
       text-align: center;
       padding: 90px 20px;
     }
 
     .hero h1 {
-      font-size: 54px;
-      line-height: 1.15;
-      margin-bottom: 22px;
+      font-size: 48px;
+      margin-bottom: 15px;
     }
 
     .hero h1 span {
-      color: #1769e0;
+      color: #38bdf8;
     }
 
     .hero p {
-      max-width: 720px;
-      margin: auto;
-      color: #667085;
+      max-width: 700px;
+      margin: 0 auto 30px;
       font-size: 19px;
     }
 
     .buttons {
-      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
-    .btn {
+    .button {
       display: inline-block;
-      padding: 14px 26px;
-      border-radius: 10px;
+      padding: 13px 24px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px;
+      background: #38bdf8;
+      color: #0f172a;
     }
 
-    .primary {
-      background: #1769e0;
-      color: white;
+    .button:hover {
+      opacity: 0.85;
     }
 
-    .secondary {
+    .button.secondary {
       background: white;
-      color: #1769e0;
-      border: 1px solid #1769e0;
-    }
-
-    .btn:hover {
-      opacity: 0.9;
+      color: #111827;
     }
 
     section {
-      max-width: 1150px;
+      max-width: 1200px;
       margin: auto;
       padding: 70px 20px;
     }
 
     .section-title {
       text-align: center;
-      font-size: 34px;
       margin-bottom: 40px;
     }
 
-    .section-text {
-      max-width: 700px;
-      margin: -20px auto 35px;
-      text-align: center;
-      color: #667085;
+    .section-title h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
     }
 
     .card {
       background: white;
-      padding: 32px 25px;
-      border-radius: 17px;
-      box-shadow: 0 5px 22px rgba(0,0,0,0.06);
-      text-align: center;
-    }
-
-    .icon {
-      font-size: 45px;
-      margin-bottom: 15px;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
     .card h3 {
+      margin-bottom: 12px;
       font-size: 22px;
-      margin-bottom: 10px;
     }
 
     .card p {
-      color: #667085;
-      margin-bottom: 20px;
+      color: #666;
+      margin-bottom: 18px;
     }
 
-    .card a {
-      color: #1769e0;
+    .card .button {
+      background: #111827;
+      color: white;
+    }
+
+    .travel {
+      background: #eaf6ff;
+      border-radius: 20px;
+      padding: 45px 30px;
+    }
+
+    .travel-card {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 35px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .travel-icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .travel-card h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .travel-card p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .kiwi-button {
+      display: inline-block;
+      background: #16a34a;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 9px;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    .products-preview {
-      background: #eef4ff;
-      max-width: none;
-    }
-
-    .products-inner {
-      max-width: 1150px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    .about {
-      background: white;
-      border-radius: 20px;
-      padding: 45px;
-      text-align: center;
-    }
-
-    .about p {
-      max-width: 750px;
-      margin: auto;
-      color: #667085;
       font-size: 17px;
     }
 
-    .affiliate {
-      max-width: 900px;
-      margin: 30px auto 0;
-      padding: 22px;
+    .kiwi-button:hover {
+      opacity: 0.85;
+    }
+
+    .app-box {
       background: white;
-      border-radius: 12px;
+      border-radius: 16px;
+      padding: 35px;
       text-align: center;
-      color: #667085;
-      font-size: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .app-box h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .app-box p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      color: #666;
+    }
+
+    .disclosure {
+      background: #fff7ed;
+      border-left: 5px solid #f97316;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+      color: #555;
     }
 
     footer {
       background: #111827;
       color: white;
-      margin-top: 50px;
-    }
-
-    .footer-inner {
-      max-width: 1150px;
-      margin: auto;
-      padding: 40px 20px;
       text-align: center;
+      padding: 35px 20px;
     }
 
     footer a {
-      color: white;
-      margin: 0 10px;
+      color: #38bdf8;
       text-decoration: none;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    .footer-links {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
     }
 
-    .copyright {
-      margin-top: 20px;
-      color: #aeb6c4;
-      font-size: 14px;
-    }
-
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
       .hero h1 {
-        font-size: 39px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      nav a {
-        margin-left: 10px;
-        font-size: 14px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .nav {
-        flex-direction: column;
-        gap: 12px;
+        font-size: 36px;
       }
 
       nav {
-        flex-wrap: wrap;
         justify-content: center;
       }
 
-      nav a {
-        margin: 5px 8px;
-      }
-
-      .hero {
-        padding: 65px 20px;
-      }
-
-      .hero h1 {
-        font-size: 35px;
+      nav ul {
+        justify-content: center;
       }
     }
   </style>
@@ -282,346 +284,290 @@
 
   <!-- HEADER -->
   <header>
-    <div class="nav">
+    <nav>
+      <a href="index.html" class="logo">Redi<span>Nexa</span></a>
 
-      <a class="logo" href="index.html">
-        RediNexa
-      </a>
-
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="#deals">Deals</a>
-        <a href="#apps">Apps</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-      </nav>
-
-    </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
   </header>
 
 
   <!-- HERO -->
-  <main>
+  <section class="hero">
+    <h1>Welcome to <span>RediNexa</span></h1>
 
-    <section class="hero">
+    <p>
+      Discover useful products, travel opportunities, apps,
+      services and great deals — all in one place.
+    </p>
 
-      <h1>
-        Discover More with
-        <span>RediNexa</span>
-      </h1>
+    <div class="buttons">
+      <a href="products.html" class="button">
+        🛍️ Explore Products
+      </a>
 
-      <p>
-        Discover useful products, smart deals, apps and digital
-        services — all in one place.
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn primary" href="products.html">
-          Explore Products
-        </a>
-
-        <a class="btn secondary" href="#apps">
-          Explore Apps
-        </a>
-
-      </div>
-
-    </section>
+      <a href="#travel" class="button secondary">
+        ✈️ Explore Travel
+      </a>
+    </div>
+  </section>
 
 
-    <!-- DEALS -->
-    <section id="deals">
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="section-title">
+      <h2>🛍️ Featured Products</h2>
+      <p>Discover products selected by RediNexa.</p>
+    </div>
 
-      <h2 class="section-title">
-        Deals & Recommendations
-      </h2>
+    <div class="cards">
 
-      <p class="section-text">
-        Find useful products and interesting offers selected
-        for everyday life.
-      </p>
-
-      <div class="cards">
-
-        <div class="card">
-
-          <div class="icon">🔥</div>
-
-          <h3>Best Deals</h3>
-
-          <p>
-            Discover products and offers worth checking.
-          </p>
-
-          <a href="products.html">
-            See Deals →
-          </a>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="icon">⭐</div>
-
-          <h3>Top Picks</h3>
-
-          <p>
-            Explore products recommended by RediNexa.
-          </p>
-
-          <a href="products.html">
-            View Picks →
-          </a>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="icon">🛒</div>
-
-          <h3>Online Shopping</h3>
-
-          <p>
-            Find useful products from online marketplaces.
-          </p>
-
-          <a href="products.html">
-            Shop Products →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PRODUCTS -->
-    <section class="products-preview">
-
-      <div class="products-inner">
-
-        <h2 class="section-title">
-          RediNexa Products
-        </h2>
-
-        <p class="section-text">
-          Explore our growing collection of products,
-          recommendations and affiliate offers.
+      <div class="card">
+        <h3>📱 Smartphone Accessories</h3>
+        <p>
+          Useful accessories and technology products.
         </p>
 
-        <div style="text-align:center;">
-
-          <a class="btn primary" href="products.html">
-            View All Products
-          </a>
-
-        </div>
-
+        <a href="products.html" class="button">
+          View Products
+        </a>
       </div>
 
-    </section>
+      <div class="card">
+        <h3>🎧 Technology</h3>
+        <p>
+          Discover useful technology and everyday gadgets.
+        </p>
 
-
-    <!-- APPS -->
-    <section id="apps">
-
-      <h2 class="section-title">
-        Our Apps
-      </h2>
-
-      <p class="section-text">
-        RediNexa also brings useful digital applications
-        and services.
-      </p>
-
-      <div class="cards">
-
-        <div class="card">
-
-          <div class="icon">📱</div>
-
-          <h3>RediJob</h3>
-
-          <p>
-            A platform designed to connect workers
-            and employers.
-          </p>
-
-          <a href="#">
-            Learn More →
-          </a>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="icon">🚀</div>
-
-          <h3>New Apps</h3>
-
-          <p>
-            More useful applications are coming soon.
-          </p>
-
-          <a href="#">
-            Coming Soon
-          </a>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="icon">🌍</div>
-
-          <h3>Europe</h3>
-
-          <p>
-            Digital products and services designed
-            for people across Europe.
-          </p>
-
-          <a href="#">
-            Discover More →
-          </a>
-
-        </div>
-
+        <a href="products.html" class="button">
+          Explore
+        </a>
       </div>
 
-    </section>
+      <div class="card">
+        <h3>🏠 Home & Lifestyle</h3>
+        <p>
+          Useful products for your home and everyday life.
+        </p>
 
-
-    <!-- SERVICES -->
-    <section id="services">
-
-      <h2 class="section-title">
-        Services
-      </h2>
-
-      <div class="cards">
-
-        <div class="card">
-
-          <div class="icon">💼</div>
-
-          <h3>Digital Services</h3>
-
-          <p>
-            Useful online services and digital solutions.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="icon">💡</div>
-
-          <h3>Useful Ideas</h3>
-
-          <p>
-            Simple tools, products and ideas for everyday life.
-          </p>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="icon">📈</div>
-
-          <h3>Growing Platform</h3>
-
-          <p>
-            RediNexa will continue growing with new
-            products and services.
-          </p>
-
-        </div>
-
+        <a href="products.html" class="button">
+          Explore
+        </a>
       </div>
 
-    </section>
+    </div>
+  </section>
 
 
-    <!-- ABOUT -->
-    <section id="about">
+  <!-- TRAVEL -->
+  <section id="travel">
+    <div class="travel">
 
-      <div class="about">
-
-        <h2 class="section-title">
-          About RediNexa
-        </h2>
+      <div class="section-title">
+        <h2>✈️ Travel</h2>
 
         <p>
-          RediNexa is a growing digital platform focused on
-          useful products, affiliate recommendations, deals,
-          apps and services.
+          Search flights and discover travel opportunities.
+        </p>
+      </div>
+
+      <div class="travel-card">
+
+        <div class="travel-icon">✈️</div>
+
+        <h3>Search Flights with Kiwi.com</h3>
+
+        <p>
+          Find flights and compare travel options through
+          our travel partner.
         </p>
 
-      </div>
-
-      <div class="affiliate">
-
-        <strong>Affiliate Disclosure</strong>
-
-        <br><br>
-
-        Some links on RediNexa may be affiliate links.
-        If you purchase through an affiliate link, RediNexa
-        may receive a commission at no additional cost to you.
+        <!-- YOUR REAL KIWI AFFILIATE LINK -->
+        <a
+          href="https://kiwi.tpk.mx/zGhF2bii"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="kiwi-button"
+        >
+          🔎 Search Flights
+        </a>
 
       </div>
 
-    </section>
+    </div>
+  </section>
 
-  </main>
+
+  <!-- DEALS -->
+  <section id="deals">
+
+    <div class="section-title">
+      <h2>🔥 Deals</h2>
+
+      <p>
+        More deals and affiliate offers will be added soon.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🔥 Special Deals</h3>
+
+        <p>
+          Check back soon for selected offers.
+        </p>
+
+        <a href="products.html" class="button">
+          See Deals
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>💰 Best Picks</h3>
+
+        <p>
+          We are building a collection of useful products.
+        </p>
+
+        <a href="products.html" class="button">
+          Explore
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- APPS -->
+  <section id="apps">
+
+    <div class="section-title">
+      <h2>📱 Apps</h2>
+
+      <p>
+        Discover useful applications from RediNexa.
+      </p>
+    </div>
+
+    <div class="app-box">
+
+      <h3>🚀 RediJob</h3>
+
+      <p>
+        RediJob is an app designed to connect workers
+        and employers and make finding work easier.
+      </p>
+
+      <a href="#" class="button">
+        RediJob — Coming Soon
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <div class="section-title">
+      <h2>🛠️ Services</h2>
+
+      <p>
+        Useful digital services and solutions from RediNexa.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>💻 Digital Services</h3>
+
+        <p>
+          Digital tools and online services for everyday needs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📲 App Development</h3>
+
+        <p>
+          Explore applications and digital projects developed
+          through the RediNexa ecosystem.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌐 Online Solutions</h3>
+
+        <p>
+          More useful online solutions will be added soon.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="section-title">
+      <h2>ℹ️ About RediNexa</h2>
+    </div>
+
+    <div class="app-box">
+
+      <p>
+        RediNexa is a growing online platform focused on
+        useful products, travel opportunities, applications,
+        digital services and selected deals.
+      </p>
+
+      <p>
+        Our goal is to make useful online opportunities easier
+        to discover in one place.
+      </p>
+
+    </div>
+
+    <div class="disclosure">
+
+      <strong>Affiliate Disclosure:</strong>
+
+      Some links on RediNexa are affiliate links.
+      If you purchase or book something through one of these
+      links, RediNexa may receive a commission at no additional
+      cost to you.
+
+    </div>
+
+  </section>
 
 
   <!-- FOOTER -->
   <footer>
 
-    <div class="footer-inner">
+    <p>
+      © 2026 RediNexa. All rights reserved.
+    </p>
 
-      <strong style="font-size:22px;">
-        RediNexa
-      </strong>
-
-      <p style="margin:15px 0;">
-        Products • Deals • Apps • Services
-      </p>
-
-      <p>
-
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="products.html">
-          Products
-        </a>
-
-        <a href="#">
-          Privacy Policy
-        </a>
-
-        <a href="#">
-          Contact
-        </a>
-
-      </p>
-
-      <p class="copyright">
-        © 2026 RediNexa. All rights reserved.
-      </p>
-
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="products.html">Products</a>
+      <a href="#travel">Travel</a>
+      <a href="#services">Services</a>
     </div>
 
   </footer>
