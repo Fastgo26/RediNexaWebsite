@@ -170,19 +170,26 @@
       color: white;
     }
 
+    /* TRAVEL */
     .travel {
       background: #eaf6ff;
       border-radius: 20px;
       padding: 45px 30px;
     }
 
+    .travel-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
     .travel-card {
       text-align: center;
-      max-width: 700px;
-      margin: auto;
       background: white;
       border-radius: 16px;
-      padding: 35px;
+      padding: 35px 25px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
@@ -192,7 +199,7 @@
     }
 
     .travel-card h3 {
-      font-size: 28px;
+      font-size: 25px;
       margin-bottom: 12px;
     }
 
@@ -201,21 +208,29 @@
       margin-bottom: 25px;
     }
 
-    .kiwi-button {
+    .travel-button {
       display: inline-block;
-      background: #16a34a;
       color: white;
-      padding: 15px 30px;
+      padding: 14px 25px;
       border-radius: 9px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 17px;
+      font-size: 16px;
     }
 
-    .kiwi-button:hover {
+    .flight-button {
+      background: #16a34a;
+    }
+
+    .esim-button {
+      background: #7c3aed;
+    }
+
+    .travel-button:hover {
       opacity: 0.85;
     }
 
+    /* APP */
     .app-box {
       background: white;
       border-radius: 16px;
@@ -305,11 +320,12 @@
     <h1>Welcome to <span>RediNexa</span></h1>
 
     <p>
-      Discover useful products, travel opportunities, apps,
-      services and great deals — all in one place.
+      Discover useful products, travel opportunities,
+      apps, services and great deals — all in one place.
     </p>
 
     <div class="buttons">
+
       <a href="products.html" class="button">
         🛍️ Explore Products
       </a>
@@ -317,12 +333,14 @@
       <a href="#travel" class="button secondary">
         ✈️ Explore Travel
       </a>
+
     </div>
   </section>
 
 
   <!-- PRODUCTS -->
   <section id="products">
+
     <div class="section-title">
       <h2>🛍️ Featured Products</h2>
       <p>Discover products selected by RediNexa.</p>
@@ -332,6 +350,7 @@
 
       <div class="card">
         <h3>📱 Smartphone Accessories</h3>
+
         <p>
           Useful accessories and technology products.
         </p>
@@ -343,6 +362,7 @@
 
       <div class="card">
         <h3>🎧 Technology</h3>
+
         <p>
           Discover useful technology and everyday gadgets.
         </p>
@@ -354,6 +374,7 @@
 
       <div class="card">
         <h3>🏠 Home & Lifestyle</h3>
+
         <p>
           Useful products for your home and everyday life.
         </p>
@@ -364,45 +385,75 @@
       </div>
 
     </div>
+
   </section>
 
 
   <!-- TRAVEL -->
   <section id="travel">
+
     <div class="travel">
 
       <div class="section-title">
         <h2>✈️ Travel</h2>
 
         <p>
-          Search flights and discover travel opportunities.
+          Find flights and stay connected while traveling.
         </p>
       </div>
 
-      <div class="travel-card">
 
-        <div class="travel-icon">✈️</div>
+      <div class="travel-cards">
 
-        <h3>Search Flights with Kiwi.com</h3>
+        <!-- KIWI -->
+        <div class="travel-card">
 
-        <p>
-          Find flights and compare travel options through
-          our travel partner.
-        </p>
+          <div class="travel-icon">✈️</div>
 
-        <!-- YOUR REAL KIWI AFFILIATE LINK -->
-        <a
-          href="https://kiwi.tpk.mx/zGhF2bii"
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          class="kiwi-button"
-        >
-          🔎 Search Flights
-        </a>
+          <h3>Search Flights</h3>
+
+          <p>
+            Search and compare flight options through Kiwi.com.
+          </p>
+
+          <a
+            href="https://kiwi.tpk.mx/zGhF2bii"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="travel-button flight-button"
+          >
+            🔎 Search Flights
+          </a>
+
+        </div>
+
+
+        <!-- AIRALO -->
+        <div class="travel-card">
+
+          <div class="travel-icon">📶</div>
+
+          <h3>Travel eSIM</h3>
+
+          <p>
+            Stay connected abroad with an Airalo eSIM.
+          </p>
+
+          <a
+            href="https://airalo.tpk.mx/IaBq5gjB"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="travel-button esim-button"
+          >
+            📱 Get Travel eSIM
+          </a>
+
+        </div>
 
       </div>
 
     </div>
+
   </section>
 
 
@@ -410,16 +461,19 @@
   <section id="deals">
 
     <div class="section-title">
+
       <h2>🔥 Deals</h2>
 
       <p>
         More deals and affiliate offers will be added soon.
       </p>
+
     </div>
 
     <div class="cards">
 
       <div class="card">
+
         <h3>🔥 Special Deals</h3>
 
         <p>
@@ -429,9 +483,11 @@
         <a href="products.html" class="button">
           See Deals
         </a>
+
       </div>
 
       <div class="card">
+
         <h3>💰 Best Picks</h3>
 
         <p>
@@ -441,6 +497,7 @@
         <a href="products.html" class="button">
           Explore
         </a>
+
       </div>
 
     </div>
@@ -452,11 +509,13 @@
   <section id="apps">
 
     <div class="section-title">
+
       <h2>📱 Apps</h2>
 
       <p>
         Discover useful applications from RediNexa.
       </p>
+
     </div>
 
     <div class="app-box">
@@ -481,38 +540,46 @@
   <section id="services">
 
     <div class="section-title">
+
       <h2>🛠️ Services</h2>
 
       <p>
         Useful digital services and solutions from RediNexa.
       </p>
+
     </div>
 
     <div class="cards">
 
       <div class="card">
+
         <h3>💻 Digital Services</h3>
 
         <p>
           Digital tools and online services for everyday needs.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>📲 App Development</h3>
 
         <p>
           Explore applications and digital projects developed
           through the RediNexa ecosystem.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>🌐 Online Solutions</h3>
 
         <p>
           More useful online solutions will be added soon.
         </p>
+
       </div>
 
     </div>
@@ -524,7 +591,9 @@
   <section id="about">
 
     <div class="section-title">
+
       <h2>ℹ️ About RediNexa</h2>
+
     </div>
 
     <div class="app-box">
@@ -541,6 +610,7 @@
       </p>
 
     </div>
+
 
     <div class="disclosure">
 
@@ -564,10 +634,12 @@
     </p>
 
     <div class="footer-links">
+
       <a href="#about">About</a>
       <a href="products.html">Products</a>
       <a href="#travel">Travel</a>
       <a href="#services">Services</a>
+
     </div>
 
   </footer>
