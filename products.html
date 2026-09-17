@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>RediNexa – Products, Deals & Travel</title>
@@ -14,7 +13,10 @@
 
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://redinexa.com/products.html">
+  <link
+    rel="canonical"
+    href="https://redinexa.com/products.html"
+  >
 
   <style>
     * {
@@ -37,8 +39,6 @@
       text-decoration: none;
     }
 
-    /* HEADER */
-
     header {
       position: sticky;
       top: 0;
@@ -51,11 +51,9 @@
       max-width: 1450px;
       margin: auto;
       padding: 20px 35px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 30px;
     }
 
@@ -83,8 +81,6 @@
       color: #1769ff;
     }
 
-    /* GENERAL */
-
     section {
       padding: 75px 25px;
     }
@@ -109,20 +105,14 @@
       font-size: 19px;
     }
 
-    /* BUTTON */
-
     .btn {
       display: inline-block;
       background: #1769ff;
       color: white;
-
       padding: 14px 24px;
-
       border-radius: 10px;
-
       font-size: 17px;
       font-weight: 800;
-
       transition: 0.2s;
     }
 
@@ -131,32 +121,26 @@
       transform: translateY(-2px);
     }
 
-    /* PRODUCTS */
-
     #products {
       background: white;
     }
 
     .product-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+      grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
 
     .product-card {
       background: white;
-
       border-radius: 18px;
-
       padding: 30px;
-
       border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    }
 
-      box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.05);
+    .product-card.temu {
+      border: 2px solid #ff7a00;
     }
 
     .icon {
@@ -174,7 +158,22 @@
       min-height: 80px;
     }
 
-    /* TRAVEL */
+    .price {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 15px 0;
+    }
+
+    .temu-label {
+      display: inline-block;
+      background: #fff0df;
+      color: #e85d00;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
 
     #travel {
       background: #edf4ff;
@@ -182,24 +181,16 @@
 
     .travel-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
+      grid-template-columns: repeat(4, 1fr);
       gap: 25px;
     }
 
     .travel-card {
       background: white;
-
       border-radius: 18px;
-
       padding: 28px;
-
       border: 1px solid #dfe7f5;
-
-      box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     }
 
     .travel-card h3 {
@@ -212,33 +203,22 @@
       min-height: 75px;
     }
 
-    /* DEALS */
-
     #deals {
       background: #fff8e9;
     }
 
     .deal-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+      grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
 
     .deal-card {
       background: white;
-
       border-radius: 18px;
-
       padding: 30px;
-
       border: 1px solid #eadfca;
-
-      box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.05);
-
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
       display: flex;
       flex-direction: column;
     }
@@ -255,25 +235,15 @@
 
     .deal-badge {
       display: inline-block;
-
       width: fit-content;
-
       background: #fff0d0;
-
       color: #9a5b00;
-
       padding: 6px 12px;
-
       border-radius: 20px;
-
       font-size: 13px;
-
       font-weight: 800;
-
       margin-bottom: 12px;
     }
-
-    /* INFORMATION */
 
     #information {
       background: white;
@@ -290,48 +260,29 @@
       font-size: 18px;
     }
 
-    /* AFFILIATE NOTICE */
-
     .affiliate-notice {
       max-width: 1000px;
-
       margin: 50px auto 0;
-
       padding: 20px;
-
       background: #f8fafc;
-
       border: 1px solid #e5e7eb;
-
       border-radius: 12px;
-
       text-align: center;
-
       color: #4b5563;
-
       font-size: 14px;
     }
 
-    /* FOOTER */
-
     footer {
       background: #111827;
-
       color: white;
-
       padding: 45px 25px;
     }
 
     .footer-container {
       max-width: 1300px;
-
       margin: auto;
-
       display: grid;
-
-      grid-template-columns:
-        2fr 1fr 1fr;
-
+      grid-template-columns: 2fr 1fr 1fr;
       gap: 40px;
     }
 
@@ -346,9 +297,7 @@
 
     footer a {
       color: #d1d5db;
-
       display: block;
-
       margin-bottom: 8px;
     }
 
@@ -358,40 +307,26 @@
 
     .copyright {
       max-width: 1300px;
-
       margin: 35px auto 0;
-
       padding-top: 20px;
-
-      border-top:
-        1px solid #374151;
-
+      border-top: 1px solid #374151;
       text-align: center;
-
       color: #9ca3af;
-
       font-size: 14px;
     }
 
-    /* MOBILE */
-
     @media (max-width: 1000px) {
-
       .travel-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .product-grid,
       .deal-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
-
     }
 
     @media (max-width: 700px) {
-
       .nav-container {
         flex-direction: column;
         padding: 18px 15px;
@@ -427,19 +362,13 @@
       .footer-container {
         grid-template-columns: 1fr;
       }
-
     }
-
   </style>
 </head>
 
 <body>
 
-
-<!-- HEADER -->
-
 <header>
-
   <div class="nav-container">
 
     <a href="index.html" class="logo">
@@ -447,45 +376,18 @@
     </a>
 
     <nav>
-
-      <a href="index.html">
-        Home
-      </a>
-
-      <a href="products.html">
-        Products
-      </a>
-
-      <a href="index.html#travel">
-        Travel
-      </a>
-
-      <a href="products.html#deals">
-        Deals
-      </a>
-
-      <a href="index.html#apps">
-        Apps
-      </a>
-
-      <a href="index.html#services">
-        Services
-      </a>
-
-      <a href="index.html#about">
-        About
-      </a>
-
-      <a href="contact.html">
-        Contact
-      </a>
-
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#travel">Travel</a>
+      <a href="products.html#deals">Deals</a>
+      <a href="index.html#apps">Apps</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
   </div>
-
 </header>
-
 
 
 <!-- PRODUCTS -->
@@ -506,6 +408,46 @@
 
     <div class="product-grid">
 
+
+      <!-- TEMU PRODUCT -->
+
+      <div class="product-card temu">
+
+        <span class="temu-label">
+          🛍️ Temu Affiliate Pick
+        </span>
+
+        <div class="icon">
+          📱
+        </div>
+
+        <h3>
+          Motorcycle & Bicycle Phone Holder
+        </h3>
+
+        <p>
+          A practical phone holder for motorcycles,
+          bicycles and scooters. Check the current
+          price and availability on Temu.
+        </p>
+
+        <div class="price">
+          View on Temu
+        </div>
+
+        <a
+          href="https://temu.to/k/ed0rlbtkd5w"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="btn"
+        >
+          🛒 View on Temu
+        </a>
+
+      </div>
+
+
+      <!-- SMARTPHONE ACCESSORIES -->
 
       <div class="product-card">
 
@@ -532,6 +474,8 @@
       </div>
 
 
+      <!-- AUDIO -->
+
       <div class="product-card">
 
         <div class="icon">
@@ -556,6 +500,8 @@
 
       </div>
 
+
+      <!-- TECHNOLOGY -->
 
       <div class="product-card">
 
@@ -582,6 +528,8 @@
       </div>
 
 
+      <!-- HOME -->
+
       <div class="product-card">
 
         <div class="icon">
@@ -606,6 +554,8 @@
 
       </div>
 
+
+      <!-- TRAVEL ESSENTIALS -->
 
       <div class="product-card">
 
@@ -632,6 +582,8 @@
       </div>
 
 
+      <!-- REDINEXA PICKS -->
+
       <div class="product-card">
 
         <div class="icon">
@@ -656,12 +608,12 @@
 
       </div>
 
+
     </div>
 
   </div>
 
 </section>
-
 
 
 <!-- TRAVEL -->
@@ -770,7 +722,7 @@
       </div>
 
 
-      <!-- AIRPORT -->
+      <!-- AIRPORT TRANSFER -->
 
       <div class="travel-card">
 
@@ -804,7 +756,6 @@
   </div>
 
 </section>
-
 
 
 <!-- DEALS -->
@@ -927,7 +878,6 @@
 </section>
 
 
-
 <!-- INFORMATION -->
 
 <section id="information">
@@ -970,7 +920,6 @@
   </div>
 
 </section>
-
 
 
 <!-- FOOTER -->
@@ -1044,13 +993,10 @@
 
 
   <div class="copyright">
-
     © 2026 RediNexa. All rights reserved.
-
   </div>
 
 </footer>
-
 
 </body>
 </html>
