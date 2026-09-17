@@ -1,36 +1,738 @@
-<!-- ONE-HAND PHONE HOLDER -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="card">
+  <title>RediNexa Products, Travel & Deals</title>
 
-  <span class="temu-label">
-    🛒 Temu Affiliate
-  </span>
+  <meta name="description"
+        content="Discover useful products, travel services, deals and selected affiliate offers from RediNexa.">
 
-  <img
-    src="temu-one-hand-phone-holder.png"
-    alt="One-Hand Phone Holder"
-  >
+  <meta name="robots" content="index, follow">
 
-  <h3>
-    One-Hand Phone Holder
-  </h3>
+  <link rel="canonical" href="https://redinexa.com/products.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .logo span {
+      color: #f97316;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+    }
+
+    nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    nav a:hover {
+      color: #f97316;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #e5e7eb;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 35px;
+      color: #6b7280;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #f3f4f6;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .card p {
+      color: #6b7280;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 9px;
+      background: #f97316;
+      color: white;
+      font-weight: 700;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .temu-label {
+      display: inline-block;
+      background: #fff7ed;
+      color: #ea580c;
+      border-radius: 20px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .category-card {
+      text-align: center;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .category-icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .category-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .travel-card,
+    .deal-card {
+      text-align: center;
+    }
+
+    .travel-icon,
+    .deal-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .travel-card h3,
+    .deal-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .travel-card p,
+    .deal-card p {
+      color: #6b7280;
+      margin-bottom: 18px;
+    }
+
+    .disclosure {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      padding: 20px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 12px;
+      color: #7c2d12;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: #f97316;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .nav {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 55px 20px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .card img {
+        height: 210px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <a href="index.html" class="logo">
+      Redi<span>Nexa</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#travel">Travel</a>
+      <a href="#deals">Deals</a>
+      <a href="index.html#apps">Apps</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero">
+  <h1>Products & Deals</h1>
 
   <p>
-    Convenient phone holder designed for easy
-    one-hand operation while driving or riding.
+    Discover useful products, travel services and selected offers
+    from RediNexa.
+  </p>
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="section" id="products">
+
+  <h2>Featured Products</h2>
+
+  <p class="section-intro">
+    Useful everyday products selected from trusted affiliate marketplaces.
   </p>
 
-  <div class="price">
-    From €0.29
-  </div>
+  <div class="grid">
 
-  <a
-    class="btn"
-    href="https://temu.to/k/evsg7kjmgwm"
-    target="_blank"
-    rel="nofollow sponsored noopener"
-  >
-    View on Temu
-  </a>
+
+    <!-- MAGNETIC PHONE CASE -->
+
+    <div class="card">
+
+      <span class="temu-label">
+        🛒 Temu Affiliate
+      </span>
+
+      <img
+        src="temu-magnetic-phone-case.png.png"
+        alt="Magnetic Phone Case"
+      >
+
+      <h3>
+        Magnetic Phone Case
+      </h3>
+
+      <p>
+        A practical magnetic phone case designed for
+        everyday smartphone protection and convenience.
+      </p>
+
+      <div class="price">
+        From €0.50
+      </div>
+
+      <a
+        class="btn"
+        href="https://temu.to/k/ebvj344i80l"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        View on Temu
+      </a>
+
+    </div>
+
+
+    <!-- ONE-HAND PHONE HOLDER -->
+
+    <div class="card">
+
+      <span class="temu-label">
+        🛒 Temu Affiliate
+      </span>
+
+      <img
+        src="temu-one-hand-phone-holder.png"
+        alt="One-Hand Phone Holder"
+      >
+
+      <h3>
+        One-Hand Phone Holder
+      </h3>
+
+      <p>
+        Convenient phone holder designed for easy
+        one-hand operation while driving or riding.
+      </p>
+
+      <div class="price">
+        From €0.29
+      </div>
+
+      <a
+        class="btn"
+        href="https://temu.to/k/evsg7kjmgwm"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        View on Temu
+      </a>
+
+    </div>
+
+
+    <!-- MAGNETIC PROTECTIVE PHONE CASE -->
+
+    <div class="card">
+
+      <span class="temu-label">
+        🛒 Temu Affiliate
+      </span>
+
+      <img
+        src="temu-magnetic-case-2.png.png"
+        alt="Magnetic Protective Phone Case"
+      >
+
+      <h3>
+        Magnetic Protective Phone Case
+      </h3>
+
+      <p>
+        Protective phone case with a built-in magnetic
+        ring and practical design for everyday smartphone use.
+      </p>
+
+      <div class="price">
+        From €0.43
+      </div>
+
+      <a
+        class="btn"
+        href="https://temu.to/k/ep04uxy082y"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        View on Temu
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section">
+
+  <h2>Shop by Category</h2>
+
+  <p class="section-intro">
+    Explore different product categories on RediNexa.
+  </p>
+
+  <div class="grid">
+
+    <div class="category-card">
+      <div class="category-icon">📱</div>
+      <h3>Smartphone Accessories</h3>
+      <p>Phone cases, holders and useful mobile accessories.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">🎧</div>
+      <h3>Audio & Headphones</h3>
+      <p>Audio products and accessories for everyday use.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">💻</div>
+      <h3>Technology</h3>
+      <p>Useful technology products and everyday gadgets.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">🏠</div>
+      <h3>Home & Lifestyle</h3>
+      <p>Practical products for home and daily life.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">✈️</div>
+      <h3>Travel Essentials</h3>
+      <p>Useful products and services for your travels.</p>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">⭐</div>
+      <h3>RediNexa Picks</h3>
+      <p>Selected products and useful offers.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TRAVEL -->
+
+<section class="section" id="travel">
+
+  <h2>Travel</h2>
+
+  <p class="section-intro">
+    Find flights, eSIMs, activities and airport transfers.
+  </p>
+
+  <div class="grid">
+
+    <div class="card travel-card">
+
+      <div class="travel-icon">✈️</div>
+
+      <h3>Flights</h3>
+
+      <p>
+        Search flights and compare travel options.
+      </p>
+
+      <a
+        class="btn"
+        href="https://kiwi.tpk.mx/zGhF2bii"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        🔎 Search Flights
+      </a>
+
+    </div>
+
+
+    <div class="card travel-card">
+
+      <div class="travel-icon">📱</div>
+
+      <h3>Travel eSIM</h3>
+
+      <p>
+        Stay connected while travelling with a travel eSIM.
+      </p>
+
+      <a
+        class="btn"
+        href="https://airalo.tpk.mx/IaBq5gjB"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        📱 Get Travel eSIM
+      </a>
+
+    </div>
+
+
+    <div class="card travel-card">
+
+      <div class="travel-icon">🎟️</div>
+
+      <h3>Activities</h3>
+
+      <p>
+        Explore activities and experiences at destinations around the world.
+      </p>
+
+      <a
+        class="btn"
+        href="https://klook.tpk.mx/YhYDIZ7q"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        🎟️ Explore Activities
+      </a>
+
+    </div>
+
+
+    <div class="card travel-card">
+
+      <div class="travel-icon">🚕</div>
+
+      <h3>Airport Transfers</h3>
+
+      <p>
+        Book convenient airport transportation.
+      </p>
+
+      <a
+        class="btn"
+        href="https://tpk.mx/v0Tm5uv5"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        🚕 Book Airport Transfer
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- DEALS -->
+
+<section class="section" id="deals">
+
+  <h2>Special Deals</h2>
+
+  <p class="section-intro">
+    Explore selected offers and travel savings.
+  </p>
+
+  <div class="grid">
+
+    <div class="card deal-card">
+
+      <div class="deal-icon">🔥</div>
+
+      <h3>Klook Activities</h3>
+
+      <p>
+        Discover activities, tours and experiences.
+      </p>
+
+      <a
+        class="btn"
+        href="https://klook.tpk.mx/LdOsllSX"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        Explore Klook
+      </a>
+
+    </div>
+
+
+    <div class="card deal-card">
+
+      <div class="deal-icon">💰</div>
+
+      <h3>Travel Savings</h3>
+
+      <p>
+        Find useful travel services and savings.
+      </p>
+
+      <a
+        class="btn"
+        href="#travel"
+      >
+        Explore Travel
+      </a>
+
+    </div>
+
+
+    <div class="card deal-card">
+
+      <div class="deal-icon">⭐</div>
+
+      <h3>Top Picks</h3>
+
+      <p>
+        Explore selected RediNexa products and travel services.
+      </p>
+
+      <a
+        class="btn"
+        href="#products"
+      >
+        Explore Picks
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- DISCLOSURE -->
+
+<div class="disclosure">
+
+  <strong>Affiliate Disclosure:</strong>
+
+  Some links on RediNexa are affiliate links.
+  If you make a purchase or booking through these links,
+  RediNexa may receive a commission at no additional cost to you.
 
 </div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h3>RediNexa</h3>
+
+  <p>
+    Products • Travel • Deals • Apps • Services
+  </p>
+
+  <p>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
+
+  <p>
+    © 2026 RediNexa. All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
