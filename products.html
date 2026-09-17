@@ -48,17 +48,17 @@
     }
 
     .nav-container {
-      max-width: 1450px;
+      max-width: 1400px;
       margin: auto;
-      padding: 20px 35px;
+      padding: 18px 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 30px;
+      gap: 25px;
     }
 
     .logo {
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 800;
       color: #1769ff;
       white-space: nowrap;
@@ -67,14 +67,13 @@
     nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 20px;
       align-items: center;
     }
 
     nav a {
       color: #111827;
       font-weight: 700;
-      font-size: 17px;
     }
 
     nav a:hover {
@@ -82,7 +81,7 @@
     }
 
     section {
-      padding: 75px 25px;
+      padding: 70px 22px;
     }
 
     .container {
@@ -93,25 +92,24 @@
     .section-title {
       text-align: center;
       font-size: 42px;
-      margin: 0 0 15px;
+      margin: 0 0 12px;
       font-weight: 800;
     }
 
     .section-subtitle {
       text-align: center;
       max-width: 800px;
-      margin: 0 auto 45px;
+      margin: 0 auto 40px;
       color: #4b5563;
-      font-size: 19px;
+      font-size: 18px;
     }
 
     .btn {
       display: inline-block;
       background: #1769ff;
       color: white;
-      padding: 14px 24px;
+      padding: 13px 22px;
       border-radius: 10px;
-      font-size: 17px;
       font-weight: 800;
       transition: 0.2s;
     }
@@ -120,6 +118,8 @@
       background: #0d57dc;
       transform: translateY(-2px);
     }
+
+    /* PRODUCTS */
 
     #products {
       background: white;
@@ -133,33 +133,41 @@
 
     .product-card {
       background: white;
-      border-radius: 18px;
-      padding: 30px;
       border: 1px solid #e5e7eb;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
     }
 
     .product-card.temu {
       border: 2px solid #ff7a00;
     }
 
-    .icon {
+    .product-image {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #f8fafc;
+      margin-bottom: 18px;
+    }
+
+    .product-icon {
       font-size: 42px;
       margin-bottom: 10px;
     }
 
     .product-card h3 {
       font-size: 25px;
-      margin: 5px 0 15px;
+      margin: 5px 0 12px;
     }
 
     .product-card p {
       color: #4b5563;
-      min-height: 80px;
     }
 
-    .price {
-      font-size: 22px;
+    .product-price {
+      font-size: 24px;
       font-weight: 800;
       margin: 15px 0;
     }
@@ -172,8 +180,10 @@
       border-radius: 20px;
       font-size: 13px;
       font-weight: 800;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
+
+    /* TRAVEL */
 
     #travel {
       background: #edf4ff;
@@ -188,20 +198,22 @@
     .travel-card {
       background: white;
       border-radius: 18px;
-      padding: 28px;
+      padding: 27px;
       border: 1px solid #dfe7f5;
       box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     }
 
     .travel-card h3 {
-      font-size: 24px;
-      margin: 5px 0 15px;
+      font-size: 23px;
+      margin: 5px 0 12px;
     }
 
     .travel-card p {
       color: #4b5563;
-      min-height: 75px;
+      min-height: 70px;
     }
+
+    /* DEALS */
 
     #deals {
       background: #fff8e9;
@@ -216,7 +228,7 @@
     .deal-card {
       background: white;
       border-radius: 18px;
-      padding: 30px;
+      padding: 28px;
       border: 1px solid #eadfca;
       box-shadow: 0 8px 25px rgba(0,0,0,0.05);
       display: flex;
@@ -224,8 +236,8 @@
     }
 
     .deal-card h3 {
-      font-size: 26px;
-      margin: 5px 0 15px;
+      font-size: 25px;
+      margin: 5px 0 12px;
     }
 
     .deal-card p {
@@ -245,12 +257,14 @@
       margin-bottom: 12px;
     }
 
+    /* ABOUT */
+
     #information {
       background: white;
     }
 
     .info-box {
-      max-width: 950px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
     }
@@ -262,7 +276,7 @@
 
     .affiliate-notice {
       max-width: 1000px;
-      margin: 50px auto 0;
+      margin: 45px auto 0;
       padding: 20px;
       background: #f8fafc;
       border: 1px solid #e5e7eb;
@@ -272,10 +286,12 @@
       font-size: 14px;
     }
 
+    /* FOOTER */
+
     footer {
       background: #111827;
       color: white;
-      padding: 45px 25px;
+      padding: 45px 22px;
     }
 
     .footer-container {
@@ -288,7 +304,6 @@
 
     footer h3 {
       margin-top: 0;
-      font-size: 22px;
     }
 
     footer p {
@@ -307,7 +322,7 @@
 
     .copyright {
       max-width: 1300px;
-      margin: 35px auto 0;
+      margin: 30px auto 0;
       padding-top: 20px;
       border-top: 1px solid #374151;
       text-align: center;
@@ -316,12 +331,12 @@
     }
 
     @media (max-width: 1000px) {
-      .travel-grid {
+      .product-grid,
+      .deal-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .product-grid,
-      .deal-grid {
+      .travel-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -329,28 +344,11 @@
     @media (max-width: 700px) {
       .nav-container {
         flex-direction: column;
-        padding: 18px 15px;
       }
 
       nav {
         justify-content: center;
-        gap: 14px;
-      }
-
-      nav a {
-        font-size: 15px;
-      }
-
-      .logo {
-        font-size: 30px;
-      }
-
-      section {
-        padding: 55px 18px;
-      }
-
-      .section-title {
-        font-size: 34px;
+        gap: 13px;
       }
 
       .product-grid,
@@ -361,6 +359,10 @@
 
       .footer-container {
         grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 34px;
       }
     }
   </style>
@@ -378,8 +380,8 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
-      <a href="index.html#travel">Travel</a>
-      <a href="products.html#deals">Deals</a>
+      <a href="#travel">Travel</a>
+      <a href="#deals">Deals</a>
       <a href="index.html#apps">Apps</a>
       <a href="index.html#services">Services</a>
       <a href="index.html#about">About</a>
@@ -401,10 +403,9 @@
     </h1>
 
     <p class="section-subtitle">
-      Discover useful products and everyday technology
-      recommendations from RediNexa.
+      Discover useful products and selected recommendations
+      from RediNexa.
     </p>
-
 
     <div class="product-grid">
 
@@ -417,29 +418,31 @@
           🛍️ Temu Affiliate Pick
         </span>
 
-        <div class="icon">
-          📱
-        </div>
+        <img
+          src="temu-rfid-wallet.png"
+          alt="Slim RFID wallet and card holder"
+          class="product-image"
+        >
 
         <h3>
-          Motorcycle & Bicycle Phone Holder
+          Slim RFID Wallet & Card Holder
         </h3>
 
         <p>
-          A practical phone holder for motorcycles,
-          bicycles and scooters. Check the current
-          price and availability on Temu.
+          A compact card holder and wallet with a slim
+          design. Check the current price and availability
+          on Temu.
         </p>
 
-        <div class="price">
-          View on Temu
+        <div class="product-price">
+          From €0.81
         </div>
 
         <a
-          href="https://temu.to/k/ed0rlbtkd5w"
+          href="https://temu.to/k/exm37gytxm0"
+          class="btn"
           target="_blank"
           rel="nofollow sponsored noopener"
-          class="btn"
         >
           🛒 View on Temu
         </a>
@@ -451,7 +454,7 @@
 
       <div class="product-card">
 
-        <div class="icon">
+        <div class="product-icon">
           📱
         </div>
 
@@ -464,10 +467,7 @@
           tablets and everyday mobile use.
         </p>
 
-        <a
-          href="#deals"
-          class="btn"
-        >
+        <a href="#deals" class="btn">
           View Deals
         </a>
 
@@ -478,7 +478,7 @@
 
       <div class="product-card">
 
-        <div class="icon">
+        <div class="product-icon">
           🎧
         </div>
 
@@ -491,10 +491,7 @@
           audio technology.
         </p>
 
-        <a
-          href="#deals"
-          class="btn"
-        >
+        <a href="#deals" class="btn">
           Explore
         </a>
 
@@ -505,7 +502,7 @@
 
       <div class="product-card">
 
-        <div class="icon">
+        <div class="product-icon">
           💻
         </div>
 
@@ -518,10 +515,7 @@
           accessories for everyday life.
         </p>
 
-        <a
-          href="#deals"
-          class="btn"
-        >
+        <a href="#deals" class="btn">
           Explore
         </a>
 
@@ -532,7 +526,7 @@
 
       <div class="product-card">
 
-        <div class="icon">
+        <div class="product-icon">
           🏠
         </div>
 
@@ -545,21 +539,18 @@
           lifestyle and everyday activities.
         </p>
 
-        <a
-          href="#deals"
-          class="btn"
-        >
+        <a href="#deals" class="btn">
           View Deals
         </a>
 
       </div>
 
 
-      <!-- TRAVEL ESSENTIALS -->
+      <!-- TRAVEL -->
 
       <div class="product-card">
 
-        <div class="icon">
+        <div class="product-icon">
           🎒
         </div>
 
@@ -572,10 +563,7 @@
           and everyday journeys.
         </p>
 
-        <a
-          href="#travel"
-          class="btn"
-        >
+        <a href="#travel" class="btn">
           Travel
         </a>
 
@@ -586,7 +574,7 @@
 
       <div class="product-card">
 
-        <div class="icon">
+        <div class="product-icon">
           ⭐
         </div>
 
@@ -599,15 +587,11 @@
           recommended by RediNexa.
         </p>
 
-        <a
-          href="#deals"
-          class="btn"
-        >
+        <a href="#deals" class="btn">
           See Picks
         </a>
 
       </div>
-
 
     </div>
 
@@ -631,15 +615,12 @@
       transfers through our travel partners.
     </p>
 
-
     <div class="travel-grid">
 
 
-      <!-- KIWI -->
-
       <div class="travel-card">
 
-        <div class="icon">
+        <div class="product-icon">
           ✈️
         </div>
 
@@ -658,17 +639,15 @@
           rel="nofollow sponsored noopener"
           class="btn"
         >
-          Search Flights
+          🔎 Search Flights
         </a>
 
       </div>
 
 
-      <!-- AIRALO -->
-
       <div class="travel-card">
 
-        <div class="icon">
+        <div class="product-icon">
           📱
         </div>
 
@@ -687,17 +666,15 @@
           rel="nofollow sponsored noopener"
           class="btn"
         >
-          Get Travel eSIM
+          📱 Get Travel eSIM
         </a>
 
       </div>
 
 
-      <!-- KLOOK -->
-
       <div class="travel-card">
 
-        <div class="icon">
+        <div class="product-icon">
           🎟️
         </div>
 
@@ -716,17 +693,15 @@
           rel="nofollow sponsored noopener"
           class="btn"
         >
-          Explore Activities
+          🎟️ Explore Activities
         </a>
 
       </div>
 
 
-      <!-- AIRPORT TRANSFER -->
-
       <div class="travel-card">
 
-        <div class="icon">
+        <div class="product-icon">
           🚕
         </div>
 
@@ -745,11 +720,10 @@
           rel="nofollow sponsored noopener"
           class="btn"
         >
-          Book Airport Transfer
+          🚕 Book Airport Transfer
         </a>
 
       </div>
-
 
     </div>
 
@@ -772,11 +746,8 @@
       Discover useful offers and deals from our partners.
     </p>
 
-
     <div class="deal-grid">
 
-
-      <!-- KLOOK -->
 
       <div class="deal-card">
 
@@ -784,7 +755,7 @@
           🔥 Special Offer
         </span>
 
-        <div class="icon">
+        <div class="product-icon">
           🎟️
         </div>
 
@@ -809,15 +780,13 @@
       </div>
 
 
-      <!-- TRAVEL SAVINGS -->
-
       <div class="deal-card">
 
         <span class="deal-badge">
           💰 Savings
         </span>
 
-        <div class="icon">
+        <div class="product-icon">
           💳
         </div>
 
@@ -827,20 +796,15 @@
 
         <p>
           Find travel services and useful offers
-          that may help you save when planning a trip.
+          for your next trip.
         </p>
 
-        <a
-          href="#travel"
-          class="btn"
-        >
+        <a href="#travel" class="btn">
           Explore Travel
         </a>
 
       </div>
 
-
-      <!-- TOP PICKS -->
 
       <div class="deal-card">
 
@@ -848,7 +812,7 @@
           ⭐ RediNexa Pick
         </span>
 
-        <div class="icon">
+        <div class="product-icon">
           🌍
         </div>
 
@@ -858,18 +822,14 @@
 
         <p>
           Explore selected travel services and
-          useful recommendations available through RediNexa.
+          useful recommendations.
         </p>
 
-        <a
-          href="#travel"
-          class="btn"
-        >
+        <a href="#travel" class="btn">
           Explore Picks
         </a>
 
       </div>
-
 
     </div>
 
@@ -928,7 +888,6 @@
 
   <div class="footer-container">
 
-
     <div>
 
       <h3>
@@ -957,11 +916,11 @@
         Products
       </a>
 
-      <a href="products.html#travel">
+      <a href="#travel">
         Travel
       </a>
 
-      <a href="products.html#deals">
+      <a href="#deals">
         Deals
       </a>
 
@@ -987,7 +946,6 @@
       </a>
 
     </div>
-
 
   </div>
 
