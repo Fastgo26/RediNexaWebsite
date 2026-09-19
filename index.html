@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f4f8ff;
@@ -304,10 +308,13 @@ nav a:hover {
   box-shadow: 0 15px 35px rgba(0,0,0,.12);
 }
 
+/* IMPORTANT: COMPACT PRODUCT IMAGE AREA */
+
 .product-image {
   position: relative;
   background: white;
   padding: 15px;
+  height: auto;
 }
 
 .product-image img {
@@ -330,7 +337,8 @@ nav a:hover {
 }
 
 .product-info {
-  padding: 20px 22px 25px;
+  padding: 18px 22px 25px;
+  margin-top: 0;
 }
 
 .rating {
@@ -538,6 +546,7 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
 }
 
 </style>
@@ -545,19 +554,30 @@ footer {
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
-  <a href="#" class="logo">
+  <a href="#home" class="logo">
     Redi<span>Nexa</span>
   </a>
 
   <nav>
+
     <a href="#home">Home</a>
+
     <a href="#travel">Travel</a>
+
     <a href="#products">Products</a>
-    <a href="#deals">Deals</a>
+
+    <a href="#products">Deals</a>
+
     <a href="#about">About</a>
-    <a href="#travel" class="nav-button">Explore Now →</a>
+
+    <a href="#travel" class="nav-button">
+      Explore Now →
+    </a>
+
   </nav>
 
 </header>
@@ -614,7 +634,6 @@ footer {
 
   </div>
 
-
   <div class="trust-item">
 
     <div class="trust-icon">🛡️</div>
@@ -625,7 +644,6 @@ footer {
 
   </div>
 
-
   <div class="trust-item">
 
     <div class="trust-icon">🏷️</div>
@@ -635,7 +653,6 @@ footer {
     <p>Handpicked for you</p>
 
   </div>
-
 
   <div class="trust-item">
 
@@ -686,9 +703,7 @@ footer {
 
       <div class="travel-content">
 
-        <h3>
-          ✈️ Flights
-        </h3>
+        <h3>✈️ Flights</h3>
 
         <p>
           Search and compare flight options for your next journey.
@@ -720,9 +735,7 @@ footer {
 
       <div class="travel-content">
 
-        <h3>
-          📱 Travel eSIM
-        </h3>
+        <h3>📱 Travel eSIM</h3>
 
         <p>
           Stay connected worldwide with a travel eSIM.
@@ -754,9 +767,7 @@ footer {
 
       <div class="travel-content">
 
-        <h3>
-          🏝️ Activities
-        </h3>
+        <h3>🏝️ Activities</h3>
 
         <p>
           Discover tours, attractions, experiences and things to do.
@@ -788,9 +799,7 @@ footer {
 
       <div class="travel-content">
 
-        <h3>
-          🚐 Airport Transfer
-        </h3>
+        <h3>🚐 Airport Transfer</h3>
 
         <p>
           Book convenient airport transportation for your trip.
@@ -855,7 +864,6 @@ footer {
 
       </div>
 
-
       <div class="product-info">
 
         <div class="rating">
@@ -905,7 +913,6 @@ footer {
 
       </div>
 
-
       <div class="product-info">
 
         <div class="rating">
@@ -954,7 +961,6 @@ footer {
         </span>
 
       </div>
-
 
       <div class="product-info">
 
@@ -1053,21 +1059,13 @@ footer {
 
     <div class="footer-links">
 
-      <a href="#home">
-        Home
-      </a>
+      <a href="#home">Home</a>
 
-      <a href="#travel">
-        Travel
-      </a>
+      <a href="#travel">Travel</a>
 
-      <a href="#products">
-        Products
-      </a>
+      <a href="#products">Products</a>
 
-      <a href="#about">
-        About
-      </a>
+      <a href="#about">About</a>
 
     </div>
 
@@ -1082,7 +1080,6 @@ footer {
   </div>
 
 </footer>
-
 
 </body>
 </html>
