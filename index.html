@@ -9,7 +9,6 @@
   <meta name="description" content="RediNexa helps you discover travel services, useful products and online offers. Explore flights, travel eSIMs, activities, airport transfers and selected products.">
 
   <meta name="robots" content="index, follow">
-
   <link rel="canonical" href="https://redinexa.com/">
 
   <style>
@@ -194,36 +193,6 @@
     }
 
 
-    /* TRUST */
-
-    .trust-grid {
-      max-width: 1200px;
-      margin: 30px auto 60px;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .trust-box {
-      background: #ffffff;
-      padding: 25px;
-      text-align: center;
-      border-radius: 14px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
-    }
-
-    .trust-box h3 {
-      margin-top: 0;
-      color: #111827;
-    }
-
-    .trust-box p {
-      margin-bottom: 0;
-      color: #6b7280;
-    }
-
-
     /* TRAVEL */
 
     .travel-grid {
@@ -234,9 +203,15 @@
 
     .travel-card {
       background: #ffffff;
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .travel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
 
     .travel-card img {
@@ -245,7 +220,8 @@
     }
 
     .travel-content {
-      padding: 22px;
+      padding: 24px;
+      min-height: 190px;
     }
 
     .travel-content h3 {
@@ -324,6 +300,38 @@
     }
 
 
+    /* CTA */
+
+    .cta {
+      max-width: 1200px;
+      margin: 70px auto;
+      padding: 45px 20px;
+      background: #2563eb;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 18px;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .cta .button {
+      background: #ffffff;
+      color: #2563eb;
+    }
+
+    .cta .button:hover {
+      background: #f3f4f6;
+    }
+
+
     /* ABOUT */
 
     .about-grid {
@@ -373,38 +381,6 @@
     .faq-item p {
       margin: 0;
       color: #6b7280;
-    }
-
-
-    /* CTA */
-
-    .cta {
-      max-width: 1200px;
-      margin: 70px auto;
-      padding: 45px 20px;
-      background: #2563eb;
-      color: #ffffff;
-      text-align: center;
-      border-radius: 18px;
-    }
-
-    .cta h2 {
-      margin-top: 0;
-      font-size: 32px;
-    }
-
-    .cta p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-    }
-
-    .cta .button {
-      background: #ffffff;
-      color: #2563eb;
-    }
-
-    .cta .button:hover {
-      background: #f3f4f6;
     }
 
 
@@ -481,10 +457,6 @@
         gap: 12px;
       }
 
-      .trust-grid {
-        grid-template-columns: 1fr;
-      }
-
       .travel-grid {
         grid-template-columns: 1fr;
       }
@@ -539,7 +511,6 @@
   </style>
 </head>
 
-
 <body>
 
 
@@ -554,13 +525,11 @@
       </a>
 
       <nav>
-
         <a href="#travel">Travel</a>
         <a href="#products">Products</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
         <a href="contact.html">Contact</a>
-
       </nav>
 
     </div>
@@ -631,6 +600,8 @@
     <div class="travel-grid">
 
 
+      <!-- FLIGHTS -->
+
       <div class="travel-card">
 
         <img
@@ -660,6 +631,8 @@
 
       </div>
 
+
+      <!-- TRAVEL ESIM -->
 
       <div class="travel-card">
 
@@ -691,6 +664,8 @@
       </div>
 
 
+      <!-- ACTIVITIES -->
+
       <div class="travel-card">
 
         <img
@@ -720,6 +695,8 @@
 
       </div>
 
+
+      <!-- AIRPORT TRANSFER -->
 
       <div class="travel-card">
 
@@ -774,6 +751,8 @@
     <div class="product-grid">
 
 
+      <!-- PRODUCT 1 -->
+
       <div class="product-card">
 
         <img
@@ -813,6 +792,8 @@
 
       </div>
 
+
+      <!-- PRODUCT 2 -->
 
       <div class="product-card">
 
@@ -854,6 +835,8 @@
       </div>
 
 
+      <!-- PRODUCT 3 -->
+
       <div class="product-card">
 
         <img
@@ -893,6 +876,8 @@
 
       </div>
 
+
+      <!-- PRODUCT 4 -->
 
       <div class="product-card">
 
@@ -977,7 +962,6 @@
 
     <div class="about-grid">
 
-
       <div class="about-box">
 
         <h3>
@@ -1015,7 +999,6 @@
         </p>
 
       </div>
-
 
     </div>
 
@@ -1118,7 +1101,6 @@
 
     <div class="footer-container">
 
-
       <div>
 
         <h3>
@@ -1160,14 +1142,11 @@
 
       </div>
 
-
     </div>
 
 
     <div class="copyright">
-
       © 2026 RediNexa. All rights reserved.
-
     </div>
 
   </footer>
