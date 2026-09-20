@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>RediNexa – Travel, Products & Useful Links</title>
@@ -14,6 +13,7 @@
   <link rel="canonical" href="https://redinexa.com/">
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -39,7 +39,9 @@
       display: block;
     }
 
+
     /* HEADER */
+
     header {
       background: #ffffff;
       border-bottom: 1px solid #e5e7eb;
@@ -83,46 +85,92 @@
       color: #2563eb;
     }
 
-    <!-- HERO -->
-<section class="hero">
 
-  <div class="hero-card">
+    /* HERO */
 
-    <img
-      src="flights.webp"
-      alt="RediNexa travel services and flight search"
-    >
+    .hero {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-    <div class="hero-content">
+    .hero-card {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
 
-      <span class="hero-label">TRAVEL • PRODUCTS • USEFUL SERVICES</span>
+    .hero-card img {
+      width: 100%;
+      height: auto;
+    }
 
-      <h1>Travel Smarter with RediNexa</h1>
+    .hero-content {
+      text-align: center;
+      padding: 35px 25px 40px;
+    }
 
-      <p>
-        Discover useful travel services, selected products and online offers
-        in one simple place.
-      </p>
+    .hero-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
 
-      <div class="hero-actions">
+    .hero-content h1 {
+      margin: 0 0 12px;
+      font-size: 38px;
+      line-height: 1.2;
+      color: #111827;
+    }
 
-        <a href="#travel" class="button">
-          Explore Travel
-        </a>
+    .hero-content p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #6b7280;
+      font-size: 17px;
+    }
 
-        <a href="#products" class="hero-secondary-button">
-          View Products
-        </a>
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-      </div>
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
 
-    </div>
+    .button:hover {
+      background: #1d4ed8;
+    }
 
-  </div>
+    .hero-secondary-button {
+      display: inline-block;
+      color: #2563eb;
+      background: #eff6ff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
 
-</section>
+    .hero-secondary-button:hover {
+      background: #dbeafe;
+    }
+
 
     /* GENERAL */
+
     .section {
       max-width: 1200px;
       margin: 60px auto;
@@ -145,7 +193,9 @@
       margin: 0;
     }
 
+
     /* TRUST */
+
     .trust-grid {
       max-width: 1200px;
       margin: 30px auto 60px;
@@ -173,7 +223,9 @@
       color: #6b7280;
     }
 
+
     /* TRAVEL */
+
     .travel-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -205,7 +257,9 @@
       color: #6b7280;
     }
 
+
     /* PRODUCTS */
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -269,7 +323,9 @@
       background: #1d4ed8;
     }
 
+
     /* ABOUT */
+
     .about-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -292,7 +348,9 @@
       color: #6b7280;
     }
 
+
     /* FAQ */
+
     .faq-list {
       max-width: 900px;
       margin: auto;
@@ -317,7 +375,9 @@
       color: #6b7280;
     }
 
+
     /* CTA */
+
     .cta {
       max-width: 1200px;
       margin: 70px auto;
@@ -347,7 +407,9 @@
       background: #f3f4f6;
     }
 
+
     /* FOOTER */
+
     footer {
       background: #111827;
       color: #ffffff;
@@ -394,8 +456,11 @@
       font-size: 14px;
     }
 
+
     /* MOBILE */
+
     @media (max-width: 800px) {
+
       .nav-container {
         flex-direction: column;
         align-items: flex-start;
@@ -432,14 +497,38 @@
       .cta h2 {
         font-size: 27px;
       }
+
+      .hero-content h1 {
+        font-size: 30px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .button,
+      .hero-secondary-button {
+        width: 100%;
+        text-align: center;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
+
   <!-- HEADER -->
+
   <header>
+
     <div class="nav-container">
 
       <a href="index.html" class="logo">
@@ -447,79 +536,89 @@
       </a>
 
       <nav>
+
         <a href="#travel">Travel</a>
+
         <a href="#products">Products</a>
+
         <a href="#about">About</a>
+
         <a href="#faq">FAQ</a>
+
         <a href="contact.html">Contact</a>
+
       </nav>
 
     </div>
+
   </header>
 
 
-  .hero-content {
-  text-align: center;
-  padding: 35px 25px 40px;
-}
+  <!-- HERO -->
 
-.hero-label {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #2563eb;
-  margin-bottom: 10px;
-}
+  <section class="hero">
 
-.hero-content h1 {
-  margin: 0 0 12px;
-  font-size: 38px;
-  line-height: 1.2;
-  color: #111827;
-}
+    <div class="hero-card">
 
-.hero-content p {
-  max-width: 700px;
-  margin: 0 auto 25px;
-  color: #6b7280;
-  font-size: 17px;
-}
+      <img
+        src="flights.webp"
+        alt="RediNexa travel services and flight search"
+      >
 
-.hero-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
+      <div class="hero-content">
 
-.hero-secondary-button {
-  display: inline-block;
-  color: #2563eb;
-  background: #eff6ff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 700;
-}
+        <span class="hero-label">
+          TRAVEL • PRODUCTS • USEFUL SERVICES
+        </span>
 
-.hero-secondary-button:hover {
-  background: #dbeafe;
-}
+        <h1>
+          Travel Smarter with RediNexa
+        </h1>
+
+        <p>
+          Discover useful travel services, selected products and online offers
+          in one simple place.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#travel" class="button">
+            Explore Travel
+          </a>
+
+          <a href="#products" class="hero-secondary-button">
+            View Products
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
   <!-- TRAVEL -->
+
   <section class="section" id="travel">
 
     <div class="section-title">
+
       <h2>Travel</h2>
-      <p>Useful services for your next trip.</p>
+
+      <p>
+        Useful services for your next trip.
+      </p>
+
     </div>
 
 
     <div class="travel-grid">
 
+
       <!-- FLIGHTS -->
+
       <div class="travel-card">
 
         <img
@@ -551,6 +650,7 @@
 
 
       <!-- TRAVEL ESIM -->
+
       <div class="travel-card">
 
         <img
@@ -582,6 +682,7 @@
 
 
       <!-- ACTIVITIES -->
+
       <div class="travel-card">
 
         <img
@@ -613,6 +714,7 @@
 
 
       <!-- AIRPORT TRANSFER -->
+
       <div class="travel-card">
 
         <img
@@ -642,12 +744,14 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
   <!-- PRODUCTS -->
+
   <section class="section" id="products">
 
     <div class="section-title">
@@ -665,6 +769,7 @@
 
 
       <!-- PRODUCT 1 -->
+
       <div class="product-card">
 
         <img
@@ -675,11 +780,17 @@
 
         <div class="product-content">
 
-          <h3>Magnetic Phone Case</h3>
+          <h3>
+            Magnetic Phone Case
+          </h3>
 
-          <div class="price">€0.43</div>
+          <div class="price">
+            €0.43
+          </div>
 
-          <div class="rating">★ 4.7</div>
+          <div class="rating">
+            ★ 4.7
+          </div>
 
           <p>
             Protective magnetic phone case.
@@ -700,6 +811,7 @@
 
 
       <!-- PRODUCT 2 -->
+
       <div class="product-card">
 
         <img
@@ -710,11 +822,17 @@
 
         <div class="product-content">
 
-          <h3>Magnetic Protective Phone Case</h3>
+          <h3>
+            Magnetic Protective Phone Case
+          </h3>
 
-          <div class="price">€0.50</div>
+          <div class="price">
+            €0.50
+          </div>
 
-          <div class="rating">★ 4.5</div>
+          <div class="rating">
+            ★ 4.5
+          </div>
 
           <p>
             Protective case with magnetic design.
@@ -735,6 +853,7 @@
 
 
       <!-- PRODUCT 3 -->
+
       <div class="product-card">
 
         <img
@@ -745,11 +864,17 @@
 
         <div class="product-content">
 
-          <h3>One-Hand Phone Holder</h3>
+          <h3>
+            One-Hand Phone Holder
+          </h3>
 
-          <div class="price">€0.29</div>
+          <div class="price">
+            €0.29
+          </div>
 
-          <div class="rating">★ 4.7</div>
+          <div class="rating">
+            ★ 4.7
+          </div>
 
           <p>
             Convenient phone holder for easier one-hand use.
@@ -770,6 +895,7 @@
 
 
       <!-- PRODUCT 4 -->
+
       <div class="product-card">
 
         <img
@@ -780,11 +906,17 @@
 
         <div class="product-content">
 
-          <h3>Samsung Magnetic Phone Case</h3>
+          <h3>
+            Samsung Magnetic Phone Case
+          </h3>
 
-          <div class="price">€0.31</div>
+          <div class="price">
+            €0.31
+          </div>
 
-          <div class="rating">★ 4.6</div>
+          <div class="rating">
+            ★ 4.6
+          </div>
 
           <p>
             Magnetic protective phone case for Samsung devices.
@@ -810,9 +942,12 @@
 
 
   <!-- CTA -->
+
   <section class="cta">
 
-    <h2>Travel Smarter</h2>
+    <h2>
+      Travel Smarter
+    </h2>
 
     <p>
       Explore useful travel services, products and online offers with RediNexa.
@@ -826,11 +961,14 @@
 
 
   <!-- ABOUT -->
+
   <section class="section" id="about">
 
     <div class="section-title">
 
-      <h2>About RediNexa</h2>
+      <h2>
+        About RediNexa
+      </h2>
 
       <p>
         Simple tools, useful links and ideas for everyday travel and shopping.
@@ -841,9 +979,12 @@
 
     <div class="about-grid">
 
+
       <div class="about-box">
 
-        <h3>Travel</h3>
+        <h3>
+          Travel
+        </h3>
 
         <p>
           RediNexa brings together useful travel services to help you plan your journey.
@@ -854,7 +995,9 @@
 
       <div class="about-box">
 
-        <h3>Products</h3>
+        <h3>
+          Products
+        </h3>
 
         <p>
           We showcase selected products available from third-party online stores.
@@ -865,7 +1008,9 @@
 
       <div class="about-box">
 
-        <h3>Useful Links</h3>
+        <h3>
+          Useful Links
+        </h3>
 
         <p>
           Our goal is to make useful online services easier to discover.
@@ -873,17 +1018,21 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
   <!-- FAQ -->
+
   <section class="section" id="faq">
 
     <div class="section-title">
 
-      <h2>FAQ</h2>
+      <h2>
+        FAQ
+      </h2>
 
       <p>
         Frequently asked questions about RediNexa.
@@ -897,7 +1046,9 @@
 
       <div class="faq-item">
 
-        <h3>What is RediNexa?</h3>
+        <h3>
+          What is RediNexa?
+        </h3>
 
         <p>
           RediNexa helps you discover travel services, useful products and online offers.
@@ -908,7 +1059,9 @@
 
       <div class="faq-item">
 
-        <h3>Can I book flights through RediNexa?</h3>
+        <h3>
+          Can I book flights through RediNexa?
+        </h3>
 
         <p>
           Yes. You can search and compare flights through our travel partners.
@@ -919,7 +1072,9 @@
 
       <div class="faq-item">
 
-        <h3>What is a travel eSIM?</h3>
+        <h3>
+          What is a travel eSIM?
+        </h3>
 
         <p>
           A travel eSIM lets you use mobile data while traveling without a physical SIM card.
@@ -930,7 +1085,9 @@
 
       <div class="faq-item">
 
-        <h3>Does RediNexa sell the products directly?</h3>
+        <h3>
+          Does RediNexa sell the products directly?
+        </h3>
 
         <p>
           No. Products are offered by third-party sellers.
@@ -941,7 +1098,9 @@
 
       <div class="faq-item">
 
-        <h3>How can I contact RediNexa?</h3>
+        <h3>
+          How can I contact RediNexa?
+        </h3>
 
         <p>
           You can contact us through our Contact page.
@@ -956,6 +1115,7 @@
 
 
   <!-- FOOTER -->
+
   <footer>
 
     <div class="footer-container">
@@ -963,7 +1123,9 @@
 
       <div>
 
-        <h3>RediNexa</h3>
+        <h3>
+          RediNexa
+        </h3>
 
         <p>
           Travel, useful products and online services in one place.
@@ -978,7 +1140,9 @@
 
       <div class="footer-links">
 
-        <h3>Information</h3>
+        <h3>
+          Information
+        </h3>
 
         <a href="contact.html">
           Contact
