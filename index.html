@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>RediNexa – Travel, Products & Useful Links</title>
@@ -12,10 +11,7 @@
     content="RediNexa brings useful travel services, selected products and helpful online resources together in one simple website."
   >
 
-  <meta
-    name="robots"
-    content="index, follow"
-  >
+  <meta name="robots" content="index, follow">
 
   <link
     rel="canonical"
@@ -23,6 +19,7 @@
   >
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -48,6 +45,7 @@
     }
 
     /* HEADER */
+
     header {
       position: sticky;
       top: 0;
@@ -60,6 +58,7 @@
       max-width: 1400px;
       margin: 0 auto;
       padding: 18px 40px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -92,6 +91,7 @@
     }
 
     /* GENERAL */
+
     .container {
       max-width: 1340px;
       margin: 0 auto;
@@ -121,6 +121,7 @@
     }
 
     /* HERO */
+
     .hero {
       max-width: 1340px;
       margin: 35px auto;
@@ -162,6 +163,7 @@
     }
 
     /* TRUST BAR */
+
     .trust-bar {
       max-width: 1340px;
       margin: 20px auto 0;
@@ -190,9 +192,6 @@
     }
 
     /* TRAVEL */
-    #travel {
-      background: #ffffff;
-    }
 
     .travel-grid {
       display: grid;
@@ -232,6 +231,7 @@
     }
 
     /* PRODUCTS */
+
     #products {
       background: #f8fafc;
     }
@@ -298,9 +298,6 @@
     }
 
     /* ABOUT */
-    #about {
-      background: #ffffff;
-    }
 
     .about-intro {
       max-width: 850px;
@@ -334,50 +331,50 @@
     }
 
     /* FAQ */
+
     #faq {
       background: #f8fafc;
     }
 
     .faq-list {
-      max-width: 950px;
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: 40px auto 0;
     }
 
-    details {
+    .faq-item {
       background: #ffffff;
       border: 1px solid #e5e7eb;
-      border-radius: 14px;
-      margin-bottom: 15px;
-      padding: 0;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     }
 
-    summary {
-      cursor: pointer;
-      padding: 20px 22px;
-      font-size: 19px;
-      font-weight: 700;
+    .faq-item h3 {
+      margin: 0 0 15px;
+      font-size: 22px;
       color: #111827;
     }
 
-    details p {
-      padding: 0 22px 20px;
-      margin: 0;
-      color: #64748b;
-      font-size: 17px;
+    .faq-item p {
+      margin: 0 0 15px;
+      line-height: 1.7;
+      color: #4b5563;
     }
 
     /* CTA */
-    .cta {
+
+    .cta-section {
       background: #eff6ff;
       text-align: center;
     }
 
-    .cta h2 {
+    .cta-section h2 {
       font-size: 36px;
       margin: 0 0 12px;
     }
 
-    .cta p {
+    .cta-section p {
       max-width: 700px;
       margin: 0 auto 25px;
       color: #64748b;
@@ -385,6 +382,7 @@
     }
 
     /* FOOTER */
+
     footer {
       background: #111827;
       color: #ffffff;
@@ -394,6 +392,7 @@
     .footer-inner {
       max-width: 1340px;
       margin: 0 auto;
+
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
       gap: 40px;
@@ -442,6 +441,7 @@
     }
 
     /* MOBILE */
+
     @media (max-width: 900px) {
 
       .header-inner {
@@ -538,14 +538,22 @@
       .product-image {
         height: auto;
       }
+
+      .faq-item {
+        padding: 20px;
+      }
     }
+
   </style>
 </head>
 
 <body>
 
+
   <!-- HEADER -->
+
   <header>
+
     <div class="header-inner">
 
       <a href="/" class="logo">
@@ -553,31 +561,50 @@
       </a>
 
       <nav>
-        <a href="#travel">Travel</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
+
+        <a href="#travel">
+          Travel
+        </a>
+
+        <a href="#products">
+          Products
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
       </nav>
 
     </div>
+
   </header>
 
 
   <!-- HERO -->
+
   <section class="hero">
 
     <div class="hero-card">
 
-      <!-- ORIGINAL FLIGHTS IMAGE -->
       <img
         src="flights.webp"
-        alt="Flights - Search and compare flight options for your next journey"
+        alt="Flights - Search and compare flight options"
       >
 
       <div class="hero-button">
-        <a href="#travel" class="button">
+
+        <a
+          href="#travel"
+          class="button"
+        >
           Explore Travel
         </a>
+
       </div>
 
     </div>
@@ -586,6 +613,7 @@
 
 
   <!-- TRUST BAR -->
+
   <div class="trust-bar">
 
     <div class="trust-grid">
@@ -616,22 +644,30 @@
 
 
   <!-- TRAVEL -->
+
   <section id="travel">
 
     <div class="container">
 
       <div class="section-title">
-        <h2>Travel Services</h2>
+
+        <h2>
+          Travel Services
+        </h2>
+
         <p>
-          Find useful travel services for flights, eSIMs,
-          activities and airport transfers.
+          Find useful travel services for flights,
+          eSIMs, activities and airport transfers.
         </p>
+
       </div>
 
 
       <div class="travel-grid">
 
+
         <!-- FLIGHTS -->
+
         <div class="travel-card">
 
           <img
@@ -643,10 +679,13 @@
 
           <div class="travel-content">
 
-            <h3>Flights</h3>
+            <h3>
+              Flights
+            </h3>
 
             <p>
-              Search and compare flight options for your next journey.
+              Search and compare flight options
+              for your next journey.
             </p>
 
             <a
@@ -663,7 +702,8 @@
         </div>
 
 
-        <!-- TRAVEL ESIM -->
+        <!-- ESIM -->
+
         <div class="travel-card">
 
           <img
@@ -675,11 +715,13 @@
 
           <div class="travel-content">
 
-            <h3>Travel eSIM</h3>
+            <h3>
+              Travel eSIM
+            </h3>
 
             <p>
-              Stay connected while travelling with convenient
-              mobile data options.
+              Stay connected while travelling with
+              convenient mobile data options.
             </p>
 
             <a
@@ -697,6 +739,7 @@
 
 
         <!-- ACTIVITIES -->
+
         <div class="travel-card">
 
           <img
@@ -708,11 +751,13 @@
 
           <div class="travel-content">
 
-            <h3>Activities</h3>
+            <h3>
+              Activities
+            </h3>
 
             <p>
-              Discover activities, tours and experiences at
-              destinations around the world.
+              Discover activities, tours and experiences
+              at destinations around the world.
             </p>
 
             <a
@@ -730,6 +775,7 @@
 
 
         <!-- AIRPORT TRANSFER -->
+
         <div class="travel-card">
 
           <img
@@ -741,11 +787,13 @@
 
           <div class="travel-content">
 
-            <h3>Airport Transfer</h3>
+            <h3>
+              Airport Transfer
+            </h3>
 
             <p>
-              Find airport transfer services for a more
-              convenient journey.
+              Find airport transfer services for a
+              more convenient journey.
             </p>
 
             <a
@@ -769,17 +817,20 @@
 
 
   <!-- PRODUCTS -->
+
   <section id="products">
 
     <div class="container">
 
       <div class="section-title">
 
-        <h2>Useful Products</h2>
+        <h2>
+          Useful Products
+        </h2>
 
         <p>
-          Discover selected products available through
-          our affiliate partners.
+          Discover selected products available
+          through our affiliate partners.
         </p>
 
       </div>
@@ -789,6 +840,7 @@
 
 
         <!-- PRODUCT 1 -->
+
         <div class="product-card">
 
           <img
@@ -800,9 +852,13 @@
 
           <div class="product-content">
 
-            <h3>Magnetic Phone Case</h3>
+            <h3>
+              Magnetic Phone Case
+            </h3>
 
-            <div class="price">€0.43</div>
+            <div class="price">
+              €0.43
+            </div>
 
             <div class="rating">
               ★★★★★ 4.7
@@ -823,6 +879,7 @@
 
 
         <!-- PRODUCT 2 -->
+
         <div class="product-card">
 
           <img
@@ -834,9 +891,13 @@
 
           <div class="product-content">
 
-            <h3>Magnetic Protective Phone Case</h3>
+            <h3>
+              Magnetic Protective Phone Case
+            </h3>
 
-            <div class="price">€0.50</div>
+            <div class="price">
+              €0.50
+            </div>
 
             <div class="rating">
               ★★★★★ 4.5
@@ -857,6 +918,7 @@
 
 
         <!-- PRODUCT 3 -->
+
         <div class="product-card">
 
           <img
@@ -868,9 +930,13 @@
 
           <div class="product-content">
 
-            <h3>One-Hand Phone Holder</h3>
+            <h3>
+              One-Hand Phone Holder
+            </h3>
 
-            <div class="price">€0.29</div>
+            <div class="price">
+              €0.29
+            </div>
 
             <div class="rating">
               ★★★★★ 4.7
@@ -891,6 +957,7 @@
 
 
         <!-- PRODUCT 4 -->
+
         <div class="product-card">
 
           <img
@@ -902,9 +969,13 @@
 
           <div class="product-content">
 
-            <h3>Samsung Magnetic Phone Case</h3>
+            <h3>
+              Samsung Magnetic Phone Case
+            </h3>
 
-            <div class="price">€0.31</div>
+            <div class="price">
+              €0.31
+            </div>
 
             <div class="rating">
               ★★★★★ 4.6
@@ -931,20 +1002,24 @@
 
 
   <!-- ABOUT -->
+
   <section id="about">
 
     <div class="container">
 
       <div class="section-title">
 
-        <h2>About RediNexa</h2>
+        <h2>
+          About RediNexa
+        </h2>
 
       </div>
 
       <div class="about-intro">
 
-        RediNexa brings useful travel services, products
-        and online resources together in one simple website.
+        RediNexa brings useful travel services,
+        products and online resources together
+        in one simple website.
 
       </div>
 
@@ -954,7 +1029,9 @@
 
         <div class="about-box">
 
-          <h3>✈️ Travel</h3>
+          <h3>
+            ✈️ Travel
+          </h3>
 
           <p>
             Discover flight search, travel eSIMs,
@@ -966,7 +1043,9 @@
 
         <div class="about-box">
 
-          <h3>🛍️ Products</h3>
+          <h3>
+            🛍️ Products
+          </h3>
 
           <p>
             Explore selected products and deals
@@ -978,7 +1057,9 @@
 
         <div class="about-box">
 
-          <h3>🔗 Useful Links</h3>
+          <h3>
+            🔗 Useful Links
+          </h3>
 
           <p>
             We provide convenient links to external
@@ -996,13 +1077,16 @@
 
 
   <!-- FAQ -->
+
   <section id="faq">
 
     <div class="container">
 
       <div class="section-title">
 
-        <h2>Frequently Asked Questions</h2>
+        <h2>
+          Frequently Asked Questions
+        </h2>
 
         <p>
           Answers to common questions about RediNexa.
@@ -1014,11 +1098,13 @@
       <div class="faq-list">
 
 
-        <details>
+        <!-- FAQ 1 -->
 
-          <summary>
+        <div class="faq-item">
+
+          <h3>
             What is RediNexa?
-          </summary>
+          </h3>
 
           <p>
             RediNexa is a website that brings together
@@ -1026,14 +1112,16 @@
             and helpful online resources.
           </p>
 
-        </details>
+        </div>
 
 
-        <details>
+        <!-- FAQ 2 -->
 
-          <summary>
+        <div class="faq-item">
+
+          <h3>
             Can I book flights through RediNexa?
-          </summary>
+          </h3>
 
           <p>
             RediNexa provides links to external travel
@@ -1041,14 +1129,16 @@
             available flight options.
           </p>
 
-        </details>
+        </div>
 
 
-        <details>
+        <!-- FAQ 3 -->
 
-          <summary>
+        <div class="faq-item">
+
+          <h3>
             What is a travel eSIM?
-          </summary>
+          </h3>
 
           <p>
             A travel eSIM is a digital SIM service that
@@ -1056,14 +1146,16 @@
             depending on your device and destination.
           </p>
 
-        </details>
+        </div>
 
 
-        <details>
+        <!-- FAQ 4 -->
 
-          <summary>
+        <div class="faq-item">
+
+          <h3>
             Does RediNexa sell the products directly?
-          </summary>
+          </h3>
 
           <p>
             No. Product links may take you to external
@@ -1072,62 +1164,30 @@
             external platform.
           </p>
 
-        </details>
+        </div>
 
 
-        <details>
+        <!-- FAQ 5 -->
 
-          <summary>
-            Does RediNexa earn money from affiliate links?
-          </summary>
+        <div class="faq-item">
 
-          <p>
-            Yes. Some links on RediNexa are affiliate links.
-            RediNexa may receive a commission when a user
-            completes a qualifying action through an affiliate
-            link.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Does using an affiliate link cost more?
-          </summary>
-
-          <p>
-            Affiliate commissions are generally paid by the
-            partner and do not normally add an additional
-            commission charge to the user. Prices and terms
-            are controlled by the external service.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
+          <h3>
             How can I contact RediNexa?
-          </summary>
+          </h3>
 
           <p>
             You can contact RediNexa through the
             Contact page.
           </p>
 
-          <p>
-            <a
-              href="contact.html"
-              style="color:#2563eb;font-weight:700;"
-            >
-              Contact RediNexa
-            </a>
-          </p>
+          <a
+            href="contact.html"
+            class="button"
+          >
+            Contact RediNexa
+          </a>
 
-        </details>
+        </div>
 
       </div>
 
@@ -1137,11 +1197,14 @@
 
 
   <!-- CTA -->
-  <section class="cta">
+
+  <section class="cta-section">
 
     <div class="container">
 
-      <h2>Travel Smarter</h2>
+      <h2>
+        Travel Smarter
+      </h2>
 
       <p>
         Explore useful travel services, products
@@ -1161,6 +1224,7 @@
 
 
   <!-- FOOTER -->
+
   <footer>
 
     <div class="footer-inner">
@@ -1182,17 +1246,27 @@
 
       <div>
 
-        <h3>Pages</h3>
+        <h3>
+          Pages
+        </h3>
 
         <div class="footer-links">
 
-          <a href="#travel">Travel</a>
+          <a href="#travel">
+            Travel
+          </a>
 
-          <a href="#products">Products</a>
+          <a href="#products">
+            Products
+          </a>
 
-          <a href="#about">About</a>
+          <a href="#about">
+            About
+          </a>
 
-          <a href="#faq">FAQ</a>
+          <a href="#faq">
+            FAQ
+          </a>
 
         </div>
 
@@ -1201,7 +1275,9 @@
 
       <div>
 
-        <h3>Information</h3>
+        <h3>
+          Information
+        </h3>
 
         <div class="footer-links">
 
@@ -1221,7 +1297,6 @@
 
       </div>
 
-
     </div>
 
 
@@ -1232,6 +1307,7 @@
     </div>
 
   </footer>
+
 
 </body>
 </html>
