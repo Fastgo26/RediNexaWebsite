@@ -1272,63 +1272,52 @@ z-index: 1;
         </a>
 
   
-<script>
-(function () {
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
   const banner = document.getElementById("cookie-banner");
   const accept = document.getElementById("cookie-accept");
   const reject = document.getElementById("cookie-reject");
   const settings = document.getElementById("cookie-settings");
 
-  if (!banner) return;
+  if (!banner || !accept || !reject || !settings) {
+    return;
+  }
 
-  function setCookie(name, value, days) {
-    const expires = new Date();
-    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-
+  function saveConsent(value) {
     document.cookie =
-      name + "=" + encodeURIComponent(value) +
-      "; expires=" + expires.toUTCString() +
-      "; path=/; SameSite=Lax; Secure";
-  }
+      "redinexa_cookie_consent=" +
+      encodeURIComponent(value) +
+      "; Max-Age=15552000; Path=/; SameSite=Lax; Secure";
 
-  function getCookie(name) {
-    const cookies = document.cookie.split(";");
-
-    for (let cookie of cookies) {
-      cookie = cookie.trim();
-
-      if (cookie.startsWith(name + "=")) {
-        return decodeURIComponent(cookie.substring(name.length + 1));
-      }
-    }
-
-    return null;
-  }
-
-  function hideBanner() {
     banner.style.display = "none";
   }
 
-  if (getCookie("redinexa_cookie_consent")) {
-    hideBanner();
+  function hasConsent() {
+    return document.cookie
+      .split("; ")
+      .some(function (row) {
+        return row.startsWith("redinexa_cookie_consent=");
+      });
+  }
+
+  if (hasConsent()) {
+    banner.style.display = "none";
   }
 
   accept.addEventListener("click", function () {
-    setCookie("redinexa_cookie_consent", "accepted", 180);
-    hideBanner();
+    saveConsent("accepted");
   });
 
   reject.addEventListener("click", function () {
-    setCookie("redinexa_cookie_consent", "rejected", 180);
-    hideBanner();
+    saveConsent("rejected");
   });
 
   settings.addEventListener("click", function () {
-    alert("Cookie settings: Necessary cookies are always enabled. Optional cookies can be controlled here.");
+    alert(
+      "Cookie settings: Necessary cookies are always enabled. Optional cookies are currently not enabled."
+    );
   });
-})();
-
-
-
+});
+</script>
 </body>
 </html>
