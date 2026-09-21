@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1307,20 +1307,13 @@ document.addEventListener("DOMContentLoaded", function () {
   reject.addEventListener("click", function () {
     saveConsent("rejected");
   });
-settings.addEventListener("click", function () {
-  const choice = confirm(
+settings.onclick = function () {
+  alert(
     "Cookie Settings\n\n" +
-    "Necessary cookies: ON\n\n" +
-    "Optional cookies: OFF\n\n" +
-    "Press OK to allow optional cookies, or Cancel to keep them off."
+    "Necessary cookies: ON\n" +
+    "Optional cookies: OFF"
   );
-
-  if (choice) {
-    saveConsent("accepted");
-  } else {
-    saveConsent("rejected");
-  }
-});
+};
   
 
 </script>
