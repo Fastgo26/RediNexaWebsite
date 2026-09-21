@@ -1307,13 +1307,22 @@ document.addEventListener("DOMContentLoaded", function () {
   reject.addEventListener("click", function () {
     saveConsent("rejected");
   });
+settings.addEventListener("click", function () {
+  const choice = confirm(
+    "Cookie Settings\n\n" +
+    "Necessary cookies: ON\n\n" +
+    "Optional cookies: OFF\n\n" +
+    "Press OK to allow optional cookies, or Cancel to keep them off."
+  );
 
-  settings.addEventListener("click", function () {
-    alert(
-      "Cookie settings: Necessary cookies are always enabled. Optional cookies are currently not enabled."
-    );
-  });
+  if (choice) {
+    saveConsent("accepted");
+  } else {
+    saveConsent("rejected");
+  }
 });
+  
+
 </script>
 </body>
 </html>
