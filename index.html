@@ -1284,8 +1284,63 @@
     <button id="cookie-accept">Accept all</button>
   </div>
 </div>
+<script>
+(function () {
+  const banner = document.getElementById("cookie-banner");
+  const accept = document.getElementById("cookie-accept");
+  const reject = document.getElementById("cookie-reject");
+  const settings = document.getElementById("cookie-settings");
 
-</body>
-</html>
+  if (!banner) return;
+
+  function setCookie(name, value, days) {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+
+    document.cookie =
+      name + "=" + encodeURIComponent(value) +
+      "; expires=" + expires.toUTCString() +
+      "; path=/; SameSite=Lax; Secure";
+  }
+
+  function getCookie(name) {
+    const cookies = document.cookie.split(";");
+
+    for (let cookie of cookies) {
+      cookie = cookie.trim();
+
+      if (cookie.startsWith(name + "=")) {
+        return decodeURIComponent(cookie.substring(name.length + 1));
+      }
+    }
+
+    return null;
+  }
+
+  function hideBanner() {
+    banner.style.display = "none";
+  }
+
+  if (getCookie("redinexa_cookie_consent")) {
+    hideBanner();
+  }
+
+  accept.addEventListener("click", function () {
+    setCookie("redinexa_cookie_consent", "accepted", 180);
+    hideBanner();
+  });
+
+  reject.addEventListener("click", function () {
+    setCookie("redinexa_cookie_consent", "rejected", 180);
+    hideBanner();
+  });
+
+  settings.addEventListener("click", function () {
+    alert("Cookie settings: Necessary cookies are always enabled. Optional cookies can be controlled here.");
+  });
+})();
+
+
+
 </body>
 </html>
