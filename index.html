@@ -11,6 +11,12 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://redinexa.com/">
 
+<!-- GOOGLE ADSENSE -->
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6924449422823610"
+  crossorigin="anonymous">
+</script>
+
 <style>
 * {
   box-sizing: border-box;
@@ -451,7 +457,7 @@ footer p {
   color: white;
 }
 
-/* TABLET */
+/* RESPONSIVE */
 @media (max-width: 1000px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -462,7 +468,6 @@ footer p {
   }
 }
 
-/* MOBILE */
 @media (max-width: 800px) {
   .nav-container {
     flex-direction: column;
@@ -493,10 +498,6 @@ footer p {
     font-size: 27px;
   }
 
-  .cta h2 {
-    font-size: 27px;
-  }
-
   .hero-content h1 {
     font-size: 30px;
   }
@@ -516,7 +517,21 @@ footer p {
   }
 }
 
-/* SMALL MOBILE */
+@media (max-width: 700px) {
+  .cookie-banner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cookie-actions {
+    flex-direction: column;
+  }
+
+  .cookie-actions button {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .product-grid {
     grid-template-columns: 1fr;
@@ -532,21 +547,6 @@ footer p {
 
   .travel-content {
     padding: 22px;
-  }
-}
-
-@media (max-width: 700px) {
-  .cookie-banner {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .cookie-actions {
-    flex-direction: column;
-  }
-
-  .cookie-actions button {
-    width: 100%;
   }
 }
 </style>
@@ -606,6 +606,7 @@ footer p {
         </a>
 
       </div>
+
     </div>
   </div>
 </section>
@@ -620,7 +621,6 @@ footer p {
 
   <div class="travel-grid">
 
-    <!-- FLIGHTS -->
     <div class="travel-card">
 
       <img
@@ -649,7 +649,6 @@ footer p {
       </div>
     </div>
 
-    <!-- TRAVEL ESIM -->
     <div class="travel-card">
 
       <img
@@ -678,7 +677,6 @@ footer p {
       </div>
     </div>
 
-    <!-- ACTIVITIES -->
     <div class="travel-card">
 
       <img
@@ -707,7 +705,6 @@ footer p {
       </div>
     </div>
 
-    <!-- AIRPORT TRANSFER -->
     <div class="travel-card">
 
       <img
@@ -749,7 +746,6 @@ footer p {
 
   <div class="product-grid">
 
-    <!-- PRODUCT 1 -->
     <div class="product-card">
 
       <img
@@ -782,7 +778,6 @@ footer p {
       </div>
     </div>
 
-    <!-- PRODUCT 2 -->
     <div class="product-card">
 
       <img
@@ -815,7 +810,6 @@ footer p {
       </div>
     </div>
 
-    <!-- PRODUCT 3 -->
     <div class="product-card">
 
       <img
@@ -848,7 +842,6 @@ footer p {
       </div>
     </div>
 
-    <!-- PRODUCT 4 -->
     <div class="product-card">
 
       <img
@@ -963,53 +956,38 @@ footer p {
   <div class="faq-list">
 
     <div class="faq-item">
-
       <h3>What is RediNexa?</h3>
-
       <p>
         RediNexa helps you discover travel services, useful products and online offers.
       </p>
-
     </div>
 
     <div class="faq-item">
-
       <h3>Can I book flights through RediNexa?</h3>
-
       <p>
         Yes. You can search and compare flights through our travel partners.
       </p>
-
     </div>
 
     <div class="faq-item">
-
       <h3>What is a travel eSIM?</h3>
-
       <p>
         A travel eSIM lets you use mobile data while traveling without a physical SIM card.
       </p>
-
     </div>
 
     <div class="faq-item">
-
       <h3>Does RediNexa sell the products directly?</h3>
-
       <p>
         No. Products are offered by third-party sellers.
       </p>
-
     </div>
 
     <div class="faq-item">
-
       <h3>How can I contact RediNexa?</h3>
-
       <p>
         You can contact us through our Contact page.
       </p>
-
     </div>
 
   </div>
@@ -1035,27 +1013,15 @@ footer p {
 
   <div class="cookie-actions">
 
-    <button
-      type="button"
-      id="cookie-reject"
-      onclick="saveConsent('rejected')"
-    >
+    <button type="button" id="cookie-reject">
       Reject
     </button>
 
-    <button
-      type="button"
-      id="cookie-settings"
-      onclick="cookieSettings()"
-    >
+    <button type="button" id="cookie-settings">
       Settings
     </button>
 
-    <button
-      type="button"
-      id="cookie-accept"
-      onclick="saveConsent('accepted')"
-    >
+    <button type="button" id="cookie-accept">
       Accept all
     </button>
 
@@ -1143,9 +1109,30 @@ function hasConsent() {
 document.addEventListener("DOMContentLoaded", function() {
 
   var banner = document.getElementById("cookie-banner");
+  var accept = document.getElementById("cookie-accept");
+  var reject = document.getElementById("cookie-reject");
+  var settings = document.getElementById("cookie-settings");
 
   if (hasConsent() && banner) {
     banner.style.display = "none";
+  }
+
+  if (accept) {
+    accept.addEventListener("click", function() {
+      saveConsent("accepted");
+    });
+  }
+
+  if (reject) {
+    reject.addEventListener("click", function() {
+      saveConsent("rejected");
+    });
+  }
+
+  if (settings) {
+    settings.addEventListener("click", function() {
+      cookieSettings();
+    });
   }
 
 });
