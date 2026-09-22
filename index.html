@@ -1,46 +1,246 @@
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      display: flex;
-      flex-direction: column;
-    }
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .travel-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.13);
-    }
+<title>RediNexa – Travel, Products & Useful Links</title>
 
-   .travel-card img {
+<meta name="description" content="RediNexa helps you discover travel services, useful products and online offers. Explore flights, travel eSIMs, activities, airport transfers and selected products.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://redinexa.com/">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 260px;
+  height: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #374151;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 35px 25px 40px;
+}
+
+.hero-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  margin: 0 0 12px;
+  font-size: 38px;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+.hero-secondary-button {
+  display: inline-block;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.hero-secondary-button:hover {
+  background: #dbeafe;
+}
+
+/* GENERAL */
+.section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.section-title p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* TRAVEL */
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.travel-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.13);
+}
+
+.travel-card img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-    .travel-content {
-      padding: 26px;
-      min-height: 220px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+.travel-content {
+  padding: 26px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-    .travel-content h3 {
-      margin: 0 0 10px;
-      color: #111827;
-      font-size: 23px;
-    }
+.travel-content h3 {
+  margin: 0 0 10px;
+  color: #111827;
+  font-size: 23px;
+}
 
-    .travel-content p {
-      color: #6b7280;
-      margin: 0 0 22px;
-      font-size: 16px;
-    }
+.travel-content p {
+  color: #6b7280;
+  margin: 0 0 22px;
+  font-size: 16px;
+}
 
-    .travel-content .button {
-      margin-top: auto;
-    }
+.travel-content .button {
+  margin-top: auto;
+}
 
- /* PRODUCTS */
-
+/* PRODUCTS */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -102,7 +302,6 @@
 
 .product-button {
   margin-top: auto;
- 
   padding: 12px 18px;
   border-radius: 8px;
   font-weight: 700;
@@ -113,229 +312,104 @@
   background: #1d4ed8;
 }
 
-
-/* PRODUCTS RESPONSIVE */
-
-@media (max-width: 1000px) {
-  .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .product-card img {
-    height: 275px !important;
-  }
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-@media (max-width: 600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .product-card img {
-    height: 275px !important;
-  }
+.about-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-    /* ABOUT */
+.about-box h3 {
+  margin-top: 0;
+  color: #111827;
+}
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.about-box p {
+  color: #6b7280;
+}
 
-    .about-box {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    }
+/* FAQ */
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+}
 
-    .about-box h3 {
-      margin-top: 0;
-      color: #111827;
-    }
+.faq-item {
+  background: #ffffff;
+  padding: 12px 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
-    .about-box p {
-      color: #6b7280;
-    }
+.faq-item h3 {
+  margin: 0 0 4px;
+  color: #111827;
+  font-size: 19px;
+}
 
+.faq-item p {
+  margin: 0;
+  color: #6b7280;
+}
 
-    /* FAQ */
+/* FOOTER */
+footer {
+  background: #111827;
+  color: #ffffff;
+  margin-top: 70px;
+  padding: 45px 20px;
+}
 
-    .faq-list {
-      max-width: 900px;
-      margin: auto;
-    }
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
 
-    .faq-item {
-      background: #ffffff;
-      padding: 12px 18px;
-      margin-bottom: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    }
+footer h3 {
+  margin-top: 0;
+}
 
-    .faq-item h3 {
-      margin: 0 0 4px;
-      color: #111827;
-      font-size: 19px;
-    }
+footer p {
+  color: #d1d5db;
+}
 
-    .faq-item p {
-      margin: 0;
-      color: #6b7280;
-    }
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.footer-links a {
+  color: #d1d5db;
+}
 
-    /* FOOTER */
+.footer-links a:hover {
+  color: #ffffff;
+}
 
-    footer {
-      background: #111827;
-      color: #ffffff;
-      margin-top: 70px;
-      padding: 45px 20px;
-    }
+.copyright {
+  max-width: 1200px;
+  margin: 35px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #374151;
+  color: #9ca3af;
+  font-size: 14px;
+}
 
-    .footer-container {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-    }
-
-    footer h3 {
-      margin-top: 0;
-    }
-
-    footer p {
-      color: #d1d5db;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .footer-links a {
-      color: #d1d5db;
-    }
-
-    .footer-links a:hover {
-      color: #ffffff;
-    }
-
-    .copyright {
-      max-width: 1200px;
-      margin: 35px auto 0;
-      padding-top: 20px;
-      border-top: 1px solid #374151;
-      color: #9ca3af;
-      font-size: 14px;
-    }
-
-
-    /* TABLET */
-
-    @media (max-width: 1000px) {
-
-      .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .travel-card img {
-        height: 230px;
-      }
-
-    }
-
-
-    /* MOBILE */
-
-    @media (max-width: 800px) {
-
-      .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        gap: 12px;
-      }
-
-      .travel-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .travel-card img {
-        height: 230px;
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-container {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title h2 {
-        font-size: 27px;
-      }
-
-      .cta h2 {
-        font-size: 27px;
-      }
-
-      .hero-content h1 {
-        font-size: 30px;
-      }
-
-      .hero-content p {
-        font-size: 16px;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-      }
-
-      .hero-actions .button,
-      .hero-secondary-button {
-        width: 100%;
-        text-align: center;
-      }
-
-    }
-
-
-    /* SMALL MOBILE */
-
-    @media (max-width: 600px) {
-
-      .product-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .travel-card img {
-        height: 210px;
-      }
-
-      .travel-content {
-        padding: 22px;
-      }
-
-    }
-</style>
-
-<style>
+/* COOKIE */
 .cookie-banner {
- position: relative;
-left: auto;
-right: auto;
-bottom: auto;
-z-index: 1;
+  position: relative;
   background: #ffffff;
   color: #111827;
   padding: 20px;
@@ -346,17 +420,6 @@ z-index: 1;
   justify-content: space-between;
   gap: 20px;
   font-family: Arial, sans-serif;
-}
-
-.cookie-banner h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
-}
-
-.cookie-banner p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .cookie-actions {
@@ -388,11 +451,92 @@ z-index: 1;
   color: white;
 }
 
+/* TABLET */
+@media (max-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel-card img {
+    height: 230px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .travel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-card img {
+    height: 230px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+
+  .cta h2 {
+    font-size: 27px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .button,
+  .hero-secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 275px !important;
+  }
+
+  .travel-card img {
+    height: 210px;
+  }
+
+  .travel-content {
+    padding: 22px;
+  }
+}
+
 @media (max-width: 700px) {
   .cookie-banner {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
     flex-direction: column;
     align-items: stretch;
   }
@@ -406,706 +550,606 @@ z-index: 1;
   }
 }
 </style>
-
 </head>
-  
 
 <body>
 
-
-  <!-- HEADER -->
-
-  <header>
-
-    <div class="nav-container">
-
-      <a href="index.html" class="logo">
-  <img src="redinexa-logo-header.png" alt="RediNexa">
-</a>
-
-      <nav>
-        <a href="#travel">Travel</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-    </div>
-
-  </header>
-
-
-  <!-- HERO -->
-
-  <section class="hero">
-
-    <div class="hero-card">
-
-     <img
-  src="redinexa-travel-banner.png"
-  alt="RediNexa travel services and flight search"
->
-        alt="RediNexa travel services and flight search"
-      >
-
-      <div class="hero-content">
-
-        <span class="hero-label">
-          TRAVEL • PRODUCTS • USEFUL SERVICES
-        </span>
-
-        <h1>
-          Travel Smarter with RediNexa
-        </h1>
-
-        <p>
-          Discover useful travel services, selected products and online offers
-          in one simple place.
-        </p>
-
-        <div class="hero-actions">
-
-          <a href="#travel" class="button">
-            Explore Travel
-          </a>
-
-          <a href="#products" class="hero-secondary-button">
-            View Products
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TRAVEL -->
-
-  <section class="section" id="travel">
-
-    <div class="section-title">
-
-      <h2>Travel</h2>
-
-      <p>
-        Useful services for your next trip.
-      </p>
-
-    </div>
-
-
-    <div class="travel-grid">
-
-
-      <!-- FLIGHTS -->
-
-      <div class="travel-card">
-
-        <img
-          src="flights.png"
-          alt="Flights - Search and compare flight options"
-          loading="lazy"
-        >
-
-        <div class="travel-content">
-
-          <h3>Flights</h3>
-
-          <p>
-            Search and compare flight options for your next journey.
-          </p>
-
-          <a
-            href="https://kiwi.tpk.mx/zGhF2bii"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="button"
-          >
-            Search Flights
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- TRAVEL ESIM -->
-
-      <div class="travel-card">
-
-        <img
-          src="travel-esim.png"
-          alt="Travel eSIM"
-          loading="lazy"
-        >
-
-        <div class="travel-content">
-
-          <h3>Travel eSIM</h3>
-
-          <p>
-            Stay connected while traveling with a convenient travel eSIM.
-          </p>
-
-          <a
-            href="https://airalo.tpk.mx/IaBq5gjB"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="button"
-          >
-            Explore eSIM
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- ACTIVITIES -->
-
-      <div class="travel-card">
-
-        <img
-          src="activities.png"
-          alt="Travel activities"
-          loading="lazy"
-        >
-
-        <div class="travel-content">
-
-          <h3>Activities</h3>
-
-          <p>
-            Discover activities, tours and experiences for your trip.
-          </p>
-
-          <a
-            href="https://klook.tpk.mx/YhYDIZ7q"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="button"
-          >
-            Explore Activities
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- AIRPORT TRANSFER -->
-
-      <div class="travel-card">
-
-        <img
-          src="airport-transfer.png"
-          alt="Airport transfer"
-          loading="lazy"
-        >
-
-        <div class="travel-content">
-
-          <h3>Airport Transfer</h3>
-
-          <p>
-            Find convenient airport transfer options for your journey.
-          </p>
-
-          <a
-            href="https://tpk.mx/v0Tm5uv5"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="button"
-          >
-            Find Transfer
-          </a>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- PRODUCTS -->
-
-  <section class="section" id="products">
-
-    <div class="section-title">
-
-      <h2>Useful Products</h2>
-
-      <p>
-        Selected products from online marketplaces.
-      </p>
-
-    </div>
-
-
-    <div class="product-grid">
-
-
-      <!-- PRODUCT 1 -->
-
-      <div class="product-card">
-
-        <img
-          src="temu-magnetic-case-2.png"
-          alt="Magnetic Phone Case"
-          loading="lazy"
-        >
-
-        <div class="product-content">
-
-          <h3>
-            Magnetic Phone Case
-          </h3>
-
-          <div class="price">
-            €0.43
-          </div>
-
-          <div class="rating">
-            ★ 4.7
-          </div>
-
-          <p>
-            Protective magnetic phone case.
-          </p>
-
-          <a
-            href="https://temu.to/k/ep04uxy082y"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="product-button"
-          >
-            View Product
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- PRODUCT 2 -->
-
-      <div class="product-card">
-
-        <img
-          src="temu-magnetic-phone-case.png"
-          alt="Magnetic Protective Phone Case"
-          loading="lazy"
-        >
-
-        <div class="product-content">
-
-          <h3>
-            Magnetic Protective Phone Case
-          </h3>
-
-          <div class="price">
-            €0.50
-          </div>
-
-          <div class="rating">
-            ★ 4.5
-          </div>
-
-          <p>
-            Protective case with magnetic design.
-          </p>
-
-          <a
-            href="https://temu.to/k/ebvj344i80l"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="product-button"
-          >
-            View Product
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- PRODUCT 3 -->
-
-      <div class="product-card">
-
-        <img
-          src="temu-one-hand-phone-holder.png"
-          alt="One-Hand Phone Holder"
-          loading="lazy"
-        >
-
-        <div class="product-content">
-
-          <h3>
-            One-Hand Phone Holder
-          </h3>
-
-          <div class="price">
-            €0.29
-          </div>
-
-          <div class="rating">
-            ★ 4.7
-          </div>
-
-          <p>
-            Convenient phone holder for easier one-hand use.
-          </p>
-
-          <a
-            href="https://temu.to/k/evsg7kjmgwm"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="product-button"
-          >
-            View Product
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- PRODUCT 4 -->
-
-      <div class="product-card">
-
-        <img
-          src="temu-samsung-magnetic-case.png"
-          alt="Samsung Magnetic Phone Case"
-          loading="lazy"
-        >
-
-        <div class="product-content">
-
-          <h3>
-            Samsung Magnetic Phone Case
-          </h3>
-
-          <div class="price">
-            €0.31
-          </div>
-
-          <div class="rating">
-            ★ 4.6
-          </div>
-
-          <p>
-            Magnetic protective phone case for Samsung devices.
-          </p>
-
-          <a
-            href="https://temu.to/k/ediw7dul9xl"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="product-button"
-          >
-            View Product
-          </a>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- CTA -->
-
-  <section class="cta">
-
-    <h2>
-      Travel Smarter
-    </h2>
-
-    <p>
-      Explore useful travel services, products and online offers with RediNexa.
-    </p>
-
-    <a href="#travel" class="button">
-      Explore Travel
+<!-- HEADER -->
+<header>
+  <div class="nav-container">
+
+    <a href="index.html" class="logo">
+      <img src="redinexa-logo-header.png" alt="RediNexa">
     </a>
 
-  </section>
+    <nav>
+      <a href="#travel">Travel</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
+  </div>
+</header>
 
-  <!-- ABOUT -->
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-card">
 
-  <section class="section" id="about">
+    <img
+      src="redinexa-travel-banner.png"
+      alt="RediNexa travel services and flight search"
+    >
 
-    <div class="section-title">
+    <div class="hero-content">
 
-      <h2>
-        About RediNexa
-      </h2>
+      <span class="hero-label">
+        TRAVEL • PRODUCTS • USEFUL SERVICES
+      </span>
+
+      <h1>Travel Smarter with RediNexa</h1>
 
       <p>
-        Simple tools, useful links and ideas for everyday travel and shopping.
+        Discover useful travel services, selected products and online offers
+        in one simple place.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#travel" class="button">
+          Explore Travel
+        </a>
+
+        <a href="#products" class="hero-secondary-button">
+          View Products
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVEL -->
+<section class="section" id="travel">
+
+  <div class="section-title">
+    <h2>Travel</h2>
+    <p>Useful services for your next trip.</p>
+  </div>
+
+  <div class="travel-grid">
+
+    <!-- FLIGHTS -->
+    <div class="travel-card">
+
+      <img
+        src="flights.png"
+        alt="Flights - Search and compare flight options"
+        loading="lazy"
+      >
+
+      <div class="travel-content">
+
+        <h3>Flights</h3>
+
+        <p>
+          Search and compare flight options for your next journey.
+        </p>
+
+        <a
+          href="https://kiwi.tpk.mx/zGhF2bii"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="button"
+        >
+          Search Flights
+        </a>
+
+      </div>
+    </div>
+
+    <!-- TRAVEL ESIM -->
+    <div class="travel-card">
+
+      <img
+        src="travel-esim.png"
+        alt="Travel eSIM"
+        loading="lazy"
+      >
+
+      <div class="travel-content">
+
+        <h3>Travel eSIM</h3>
+
+        <p>
+          Stay connected while traveling with a convenient travel eSIM.
+        </p>
+
+        <a
+          href="https://airalo.tpk.mx/IaBq5gjB"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="button"
+        >
+          Explore eSIM
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ACTIVITIES -->
+    <div class="travel-card">
+
+      <img
+        src="activities.png"
+        alt="Travel activities"
+        loading="lazy"
+      >
+
+      <div class="travel-content">
+
+        <h3>Activities</h3>
+
+        <p>
+          Discover activities, tours and experiences for your trip.
+        </p>
+
+        <a
+          href="https://klook.tpk.mx/YhYDIZ7q"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="button"
+        >
+          Explore Activities
+        </a>
+
+      </div>
+    </div>
+
+    <!-- AIRPORT TRANSFER -->
+    <div class="travel-card">
+
+      <img
+        src="airport-transfer.png"
+        alt="Airport transfer"
+        loading="lazy"
+      >
+
+      <div class="travel-content">
+
+        <h3>Airport Transfer</h3>
+
+        <p>
+          Find convenient airport transfer options for your journey.
+        </p>
+
+        <a
+          href="https://tpk.mx/v0Tm5uv5"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="button"
+        >
+          Find Transfer
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+
+  <div class="section-title">
+    <h2>Useful Products</h2>
+    <p>Selected products from online marketplaces.</p>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+
+      <img
+        src="temu-magnetic-case-2.png"
+        alt="Magnetic Phone Case"
+        loading="lazy"
+      >
+
+      <div class="product-content">
+
+        <h3>Magnetic Phone Case</h3>
+
+        <div class="price">€0.43</div>
+
+        <div class="rating">★ 4.7</div>
+
+        <p>
+          Protective magnetic phone case.
+        </p>
+
+        <a
+          href="https://temu.to/k/ep04uxy082y"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="product-button"
+        >
+          View Product
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+
+      <img
+        src="temu-magnetic-phone-case.png"
+        alt="Magnetic Protective Phone Case"
+        loading="lazy"
+      >
+
+      <div class="product-content">
+
+        <h3>Magnetic Protective Phone Case</h3>
+
+        <div class="price">€0.50</div>
+
+        <div class="rating">★ 4.5</div>
+
+        <p>
+          Protective case with magnetic design.
+        </p>
+
+        <a
+          href="https://temu.to/k/ebvj344i80l"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="product-button"
+        >
+          View Product
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+
+      <img
+        src="temu-one-hand-phone-holder.png"
+        alt="One-Hand Phone Holder"
+        loading="lazy"
+      >
+
+      <div class="product-content">
+
+        <h3>One-Hand Phone Holder</h3>
+
+        <div class="price">€0.29</div>
+
+        <div class="rating">★ 4.7</div>
+
+        <p>
+          Convenient phone holder for easier one-hand use.
+        </p>
+
+        <a
+          href="https://temu.to/k/evsg7kjmgwm"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="product-button"
+        >
+          View Product
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product-card">
+
+      <img
+        src="temu-samsung-magnetic-case.png"
+        alt="Samsung Magnetic Phone Case"
+        loading="lazy"
+      >
+
+      <div class="product-content">
+
+        <h3>Samsung Magnetic Phone Case</h3>
+
+        <div class="price">€0.31</div>
+
+        <div class="rating">★ 4.6</div>
+
+        <p>
+          Magnetic protective phone case for Samsung devices.
+        </p>
+
+        <a
+          href="https://temu.to/k/ediw7dul9xl"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="product-button"
+        >
+          View Product
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+  <h2>Travel Smarter</h2>
+
+  <p>
+    Explore useful travel services, products and online offers with RediNexa.
+  </p>
+
+  <a href="#travel" class="button">
+    Explore Travel
+  </a>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+
+  <div class="section-title">
+
+    <h2>About RediNexa</h2>
+
+    <p>
+      Simple tools, useful links and ideas for everyday travel and shopping.
+    </p>
+
+  </div>
+
+  <div class="about-grid">
+
+    <div class="about-box">
+
+      <h3>Travel</h3>
+
+      <p>
+        RediNexa brings together useful travel services to help you plan your journey.
       </p>
 
     </div>
 
+    <div class="about-box">
 
-    <div class="about-grid">
-
-
-      <div class="about-box">
-
-        <h3>
-          Travel
-        </h3>
-
-        <p>
-          RediNexa brings together useful travel services to help you plan your journey.
-        </p>
-
-      </div>
-
-
-      <div class="about-box">
-
-        <h3>
-          Products
-        </h3>
-
-        <p>
-          We showcase selected products available from third-party online stores.
-        </p>
-
-      </div>
-
-
-      <div class="about-box">
-
-        <h3>
-          Useful Links
-        </h3>
-
-        <p>
-          Our goal is to make useful online services easier to discover.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- FAQ -->
-
-  <section class="section" id="faq">
-
-    <div class="section-title">
-
-      <h2>
-        FAQ
-      </h2>
+      <h3>Products</h3>
 
       <p>
-        Frequently asked questions about RediNexa.
+        We showcase selected products available from third-party online stores.
       </p>
 
     </div>
 
+    <div class="about-box">
 
-    <div class="faq-list">
+      <h3>Useful Links</h3>
 
-
-      <div class="faq-item">
-
-        <h3>
-          What is RediNexa?
-        </h3>
-
-        <p>
-          RediNexa helps you discover travel services, useful products and online offers.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>
-          Can I book flights through RediNexa?
-        </h3>
-
-        <p>
-          Yes. You can search and compare flights through our travel partners.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>
-          What is a travel eSIM?
-        </h3>
-
-        <p>
-          A travel eSIM lets you use mobile data while traveling without a physical SIM card.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>
-          Does RediNexa sell the products directly?
-        </h3>
-
-        <p>
-          No. Products are offered by third-party sellers.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>
-          How can I contact RediNexa?
-        </h3>
-
-        <p>
-          You can contact us through our Contact page.
-        </p>
-
-      </div>
-
+      <p>
+        Our goal is to make useful online services easier to discover.
+      </p>
 
     </div>
 
-  </section>
+  </div>
+</section>
 
+<!-- FAQ -->
+<section class="section" id="faq">
 
-  <!-- FOOTER -->
+  <div class="section-title">
+
+    <h2>FAQ</h2>
+
+    <p>
+      Frequently asked questions about RediNexa.
+    </p>
+
+  </div>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+
+      <h3>What is RediNexa?</h3>
+
+      <p>
+        RediNexa helps you discover travel services, useful products and online offers.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Can I book flights through RediNexa?</h3>
+
+      <p>
+        Yes. You can search and compare flights through our travel partners.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>What is a travel eSIM?</h3>
+
+      <p>
+        A travel eSIM lets you use mobile data while traveling without a physical SIM card.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>Does RediNexa sell the products directly?</h3>
+
+      <p>
+        No. Products are offered by third-party sellers.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>How can I contact RediNexa?</h3>
+
+      <p>
+        You can contact us through our Contact page.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
 <!-- COOKIE BANNER -->
-<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+<div
+  id="cookie-banner"
+  class="cookie-banner"
+  role="dialog"
+  aria-label="Cookie consent"
+>
+
   <div class="cookie-text">
+
     <strong>🍪 We use cookies</strong>
-    <span>Necessary cookies keep RediNexa working. Optional cookies help us improve the website.</span>
+
+    <span>
+      Necessary cookies keep RediNexa working. Optional cookies help us improve the website.
+    </span>
+
   </div>
 
   <div class="cookie-actions">
-    <button id="cookie-reject">Reject</button>
-    <button id="cookie-settings">Settings</button>
-    <button id="cookie-accept">Accept all</button>
+
+    <button
+      type="button"
+      id="cookie-reject"
+      onclick="saveConsent('rejected')"
+    >
+      Reject
+    </button>
+
+    <button
+      type="button"
+      id="cookie-settings"
+      onclick="cookieSettings()"
+    >
+      Settings
+    </button>
+
+    <button
+      type="button"
+      id="cookie-accept"
+      onclick="saveConsent('accepted')"
+    >
+      Accept all
+    </button>
+
   </div>
 </div>
-  <footer>
 
-    <div class="footer-container">
+<!-- FOOTER -->
+<footer>
 
+  <div class="footer-container">
 
-      <div>
+    <div>
 
-        <h3>
-          RediNexa
-        </h3>
+      <h3>RediNexa</h3>
 
-        <p>
-          Travel, useful products and online services in one place.
-        </p>
+      <p>
+        Travel, useful products and online services in one place.
+      </p>
 
-        <p>
-          RediNexa may receive commissions from some affiliate links.
-        </p>
+      <p>
+        RediNexa may receive commissions from some affiliate links.
+      </p>
 
-      </div>
+    </div>
 
+    <div class="footer-links">
 
-      <div class="footer-links">
+      <h3>Information</h3>
 
-        <h3>
-          Information
-        </h3>
+      <a href="contact.html">Contact</a>
 
-        <a href="contact.html">
-          Contact
-        </a>
+      <a href="privacy.html">Privacy Policy</a>
 
-        <a href="privacy.html">
-          Privacy Policy
-        </a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
 
-        <a href="affiliate-disclosure.html">
-          Affiliate Disclosure
-        </a>
+      <a href="#faq">FAQ</a>
 
-        <a href="#faq">
-          FAQ
-        </a>
+    </div>
 
-  
- <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const banner = document.getElementById("cookie-banner");
-  const accept = document.getElementById("cookie-accept");
-  const reject = document.getElementById("cookie-reject");
-  const settings = document.getElementById("cookie-settings");
+  </div>
 
-  if (!banner || !accept || !reject || !settings) {
-    return;
-  }
+  <div class="copyright">
+    © RediNexa. All rights reserved.
+  </div>
 
-  function saveConsent(value) {
-    document.cookie =
-      "redinexa_cookie_consent=" +
-      encodeURIComponent(value) +
-      "; Max-Age=15552000; Path=/; SameSite=Lax; Secure";
+</footer>
 
+<script>
+function saveConsent(value) {
+  document.cookie =
+    "redinexa_cookie_consent=" +
+    encodeURIComponent(value) +
+    "; Max-Age=15552000; Path=/; SameSite=Lax; Secure";
+
+  var banner = document.getElementById("cookie-banner");
+
+  if (banner) {
     banner.style.display = "none";
   }
+}
 
-  function hasConsent() {
-    return document.cookie
-      .split("; ")
-      .some(function (row) {
-        return row.startsWith("redinexa_cookie_consent=");
-      });
-  }
-
-  if (hasConsent()) {
-    banner.style.display = "none";
-  }
-
-  accept.addEventListener("click", function () {
-    saveConsent("accepted");
-  });
-
-  reject.addEventListener("click", function () {
-    saveConsent("rejected");
-  });
-settings.onclick = function () {
-  alert(
+function cookieSettings() {
+  var choice = confirm(
     "Cookie Settings\n\n" +
-    "Necessary cookies: ON\n" +
-    "Optional cookies: OFF"
+    "Necessary cookies: ON\n\n" +
+    "Optional cookies: OFF\n\n" +
+    "Press OK to allow optional cookies, or Cancel to keep them off."
   );
-};
-  
+
+  if (choice) {
+    saveConsent("accepted");
+  } else {
+    saveConsent("rejected");
+  }
+}
+
+function hasConsent() {
+  return document.cookie
+    .split("; ")
+    .some(function(row) {
+      return row.indexOf("redinexa_cookie_consent=") === 0;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  var banner = document.getElementById("cookie-banner");
+
+  if (hasConsent() && banner) {
+    banner.style.display = "none";
+  }
 
 });
 </script>
+
 </body>
 </html>
