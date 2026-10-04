@@ -1,52 +1,1519 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms & Conditions – RediNexa</title>
-<meta name="description" content="Terms and conditions for using the RediNexa website.">
-<link rel="canonical" href="https://redinexa.com/terms.html">
-<style>
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.7;margin:0;color:#222;background:#fff}
-main{max-width:900px;margin:0 auto;padding:40px 22px}
-h1{color:#123b68} h2{color:#174f87;margin-top:30px}
-a{color:#1266a3}.back{display:inline-block;margin-bottom:25px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RediNexa – Travel, Products & Useful Links</title>
+
+  <meta name="description" content="RediNexa helps you discover travel services, useful products and online offers. Explore flights, travel eSIMs, activities, airport transfers and selected products.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://redinexa.com/">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+   .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 260px;
+  height: auto;
+  display: block;
+}
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #374151;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .hero-card {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-content {
+      text-align: center;
+      padding: 35px 25px 40px;
+    }
+
+    .hero-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+      margin: 0 0 12px;
+      font-size: 38px;
+      line-height: 1.2;
+      color: #111827;
+    }
+
+    .hero-content p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #6b7280;
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    .hero-secondary-button {
+      display: inline-block;
+      color: #2563eb;
+      background: #eff6ff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .hero-secondary-button:hover {
+      background: #dbeafe;
+    }
+
+
+    /* GENERAL */
+
+    .section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .section-title p {
+      color: #6b7280;
+      margin: 0;
+    }
+
+
+    /* TRAVEL */
+
+    .travel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .travel-card {
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e5e7eb;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .travel-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.13);
+    }
+
+   .travel-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+    .travel-content {
+      padding: 26px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .travel-content h3 {
+      margin: 0 0 10px;
+      color: #111827;
+      font-size: 23px;
+    }
+
+    .travel-content p {
+      color: #6b7280;
+      margin: 0 0 22px;
+      font-size: 16px;
+    }
+
+    .travel-content .button {
+      margin-top: auto;
+    }
+
+ /* PRODUCTS */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.product-card img {
+  display: block;
+  width: 100% !important;
+  height: 275px !important;
+  object-fit: contain !important;
+  background: #f8fafc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.product-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.product-content h3 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.product-content p {
+  color: #6b7280;
+  margin: 0 0 15px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+  margin: 8px 0;
+}
+
+.rating {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product-button {
+  margin-top: auto;
+ 
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.product-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* PRODUCTS RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-card img {
+    height: 275px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 275px !important;
+  }
+}
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .about-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .about-box h3 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    .about-box p {
+      color: #6b7280;
+    }
+
+
+    /* FAQ */
+
+    .faq-list {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      padding: 12px 18px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 4px;
+      color: #111827;
+      font-size: 19px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #6b7280;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: #111827;
+      color: #ffffff;
+      margin-top: 70px;
+      padding: 45px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-top: 0;
+    }
+
+    footer p {
+      color: #d1d5db;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: #d1d5db;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+
+    /* TABLET */
+
+    @media (max-width: 1000px) {
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .travel-card img {
+        height: 230px;
+      }
+
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .travel-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .travel-card img {
+        height: 230px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 27px;
+      }
+
+      .cta h2 {
+        font-size: 27px;
+      }
+
+      .hero-content h1 {
+        font-size: 30px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .button,
+      .hero-secondary-button {
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+
+    /* SMALL MOBILE */
+
+    @media (max-width: 600px) {
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .travel-card img {
+        height: 210px;
+      }
+
+      .travel-content {
+        padding: 22px;
+      }
+
+    }
 </style>
+
+<style>
+.cookie-banner {
+ position: relative;
+left: auto;
+right: auto;
+bottom: auto;
+z-index: 1;
+  background: #ffffff;
+  color: #111827;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cookie-banner h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cookie-actions button {
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#cookie-reject {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+#cookie-settings {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+#cookie-accept {
+  background: #dc2626;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .cookie-banner {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cookie-actions {
+    flex-direction: column;
+  }
+
+  .cookie-actions button {
+    width: 100%;
+  }
+}
+</style>
+
 </head>
+  </style>
+</head>
+
 <body>
-<main>
-<a class="back" href="index.html">← Back to RediNexa</a>
-<h1>Terms & Conditions</h1>
-<p><strong>Last updated: 4 October 2026</strong></p>
 
-<p>These Terms & Conditions explain the basic rules for using the RediNexa website.</p>
 
-<h2>1. About RediNexa</h2>
-<p>RediNexa provides travel information, practical planning guides, product information and links to third-party services. RediNexa is generally an information and referral website and does not directly provide every travel, booking or product service shown on the website.</p>
+  <!-- HEADER -->
 
-<h2>2. Third-party services</h2>
-<p>When you follow a link from RediNexa to a third-party website, you are using that third party's website and services. Their own terms, privacy policies, prices and booking conditions apply.</p>
+  <header>
 
-<h2>3. Prices and availability</h2>
-<p>Prices, availability, promotions and product information can change. Information displayed on RediNexa is provided for general guidance and should be checked on the relevant third-party website before making a purchase or booking.</p>
+    <div class="nav-container">
 
-<h2>4. Affiliate links</h2>
-<p>Some links on RediNexa are affiliate links. RediNexa may receive a commission when a visitor makes a qualifying purchase or booking through an affiliate link. This does not normally change the price paid by the visitor. See our <a href="affiliate-disclosure.html">Affiliate Disclosure</a> for more information.</p>
+      <a href="index.html" class="logo">
+  <img src="redinexa-logo-header.png" alt="RediNexa">
+</a>
 
-<h2>5. Website content</h2>
-<p>We aim to keep our information useful and accurate, but we cannot guarantee that every page will always be complete, current or error-free. You should verify important information with the relevant provider.</p>
+      <nav>
+        <a href="#travel">Travel</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<h2>6. Acceptable use</h2>
-<p>You agree to use RediNexa lawfully and not to interfere with the operation or security of the website.</p>
+    </div>
 
-<h2>7. Intellectual property</h2>
-<p>Unless otherwise stated, RediNexa's original text, branding and website design are protected by applicable intellectual-property laws. Third-party logos, trademarks and product materials belong to their respective owners.</p>
+  </header>
 
-<h2>8. Changes</h2>
-<p>We may update these Terms & Conditions when the website or applicable requirements change. The latest version will always be published on this page.</p>
 
-<h2>9. Contact</h2>
-<p>If you have questions about these Terms & Conditions, please use the <a href="contact.html">RediNexa Contact page</a>.</p>
-</main>
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-card">
+
+     <img
+  src="redinexa-travel-banner.png"
+  alt="RediNexa travel services and flight search"
+>
+        alt="RediNexa travel services and flight search"
+      >
+
+      <div class="hero-content">
+
+        <span class="hero-label">
+          TRAVEL • PRODUCTS • USEFUL SERVICES
+        </span>
+
+        <h1>
+          Travel Smarter with RediNexa
+        </h1>
+
+        <p>
+          Discover useful travel services, selected products and online offers
+          in one simple place.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#travel" class="button">
+            Explore Travel
+          </a>
+
+          <a href="#products" class="hero-secondary-button">
+            View Products
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRAVEL -->
+
+  
+
+  <!-- DETAILED TRAVEL PLANNING GUIDE -->
+  <section class="section" id="travel-planning">
+    <div class="section-title">
+      <h2>Travel Planning Guide</h2>
+      <p>Simple steps to help you prepare before booking a trip.</p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-box">
+        <h3>Finding the Right Flight</h3>
+        <p>
+          Compare departure airports, travel dates, flight times and baggage rules before booking.
+          A low ticket price may not be the cheapest overall option after baggage, transport and
+          other travel costs are included.
+        </p>
+        <p>
+          Before paying, check the passenger name, travel date, airport, cancellation conditions
+          and the airline's current baggage allowance.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Choosing a Travel eSIM</h3>
+        <p>
+          First check whether your phone supports eSIM and whether it is unlocked for other
+          networks. Then compare destination coverage, data amount, validity period, activation
+          instructions and whether hotspot use is supported.
+        </p>
+        <p>
+          If you need internet immediately after landing, read the activation instructions before
+          your trip and install the eSIM while you still have a reliable internet connection.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Planning Airport Transfers</h3>
+        <p>
+          Check how far the airport is from your accommodation and compare public transport,
+          taxis and pre-booked transfers. Consider your arrival time, luggage and whether public
+          transport operates at that time.
+        </p>
+        <p>
+          For a pre-booked transfer, check the meeting point, passenger details, cancellation
+          rules and what happens if your flight is delayed.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Booking Activities</h3>
+        <p>
+          When booking tours or activities, check the meeting location, duration, included items,
+          age requirements, cancellation policy and any equipment you need to bring.
+        </p>
+        <p>
+          Read the current activity details before payment because schedules, prices and
+          availability can change.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Before You Leave</h3>
+        <p>
+          Keep your passport or travel documents accessible, check your accommodation details,
+          confirm your transport arrangements and make sure your phone has a suitable connection.
+        </p>
+        <p>
+          It is also useful to save important booking confirmations offline in case you have
+          limited internet access during your journey.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Compare the Total Cost</h3>
+        <p>
+          Don't compare travel options using only the headline price. Consider baggage, airport
+          transport, mobile data, booking fees and other necessary costs.
+        </p>
+        <p>
+          RediNexa provides information and links to third-party services. Always check the final
+          price and terms on the partner's website before completing a booking.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRAVEL GUIDE -->
+  <section class="section" id="travel-guide">
+    <div class="section-title">
+      <h2>RediNexa Travel Planning Guide</h2>
+      <p>Practical tips to help you plan a trip before you book.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>1. Compare your travel options</h3>
+        <p>
+          Check different departure times, airports and baggage rules before choosing a flight.
+          A cheaper ticket is not always the best value if luggage or airport transfers cost more.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>2. Check your mobile connection</h3>
+        <p>
+          If you travel abroad, check whether your phone supports eSIM and whether your destination
+          is covered. Compare data amount, validity, activation rules and hotspot support before buying.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>3. Plan airport transport</h3>
+        <p>
+          Look at the distance between the airport and your accommodation and compare public transport,
+          taxis and pre-booked transfers. Check the arrival time and cancellation conditions.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>4. Choose products carefully</h3>
+        <p>
+          For travel products, check dimensions, compatibility, materials, customer reviews and return
+          conditions. Product prices and availability can change, so always confirm the final details
+          on the seller's website.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="section-title">
+      <h2>How RediNexa Works</h2>
+      <p>Simple information first, then a link to the relevant service or store.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>Discover</h3>
+        <p>Explore travel services, connectivity options and selected products in one place.</p>
+      </div>
+      <div class="about-box">
+        <h3>Compare</h3>
+        <p>Read the practical information on this website and compare the important details for your needs.</p>
+      </div>
+      <div class="about-box">
+        <h3>Decide</h3>
+        <p>When a service looks suitable, use the partner or store link to check the current offer.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="travel">
+
+    <div class="section-title">
+
+      <h2>Travel</h2>
+
+      <p>
+        Useful services for your next trip.
+      </p>
+
+    </div>
+
+
+    <div class="travel-grid">
+
+
+      <!-- FLIGHTS -->
+
+      <div class="travel-card">
+
+        <img
+          src="flights.png"
+          alt="Flights - Search and compare flight options"
+          loading="lazy"
+        >
+
+        <div class="travel-content">
+
+          <h3>Flights</h3>
+
+          <p>
+            Search and compare flight options for your next journey.
+          </p>
+
+          <a
+            href="https://kiwi.tpk.mx/zGhF2bii"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="button"
+          >
+            Search Flights
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- TRAVEL ESIM -->
+
+      <div class="travel-card">
+
+        <img
+          src="travel-esim.png"
+          alt="Travel eSIM"
+          loading="lazy"
+        >
+
+        <div class="travel-content">
+
+          <h3>Travel eSIM</h3>
+
+          <p>
+            Stay connected while traveling with a convenient travel eSIM.
+          </p>
+
+          <a
+            href="https://airalo.tpk.mx/IaBq5gjB"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="button"
+          >
+            Explore eSIM
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ACTIVITIES -->
+
+      <div class="travel-card">
+
+        <img
+          src="activities.png"
+          alt="Travel activities"
+          loading="lazy"
+        >
+
+        <div class="travel-content">
+
+          <h3>Activities</h3>
+
+          <p>
+            Discover activities, tours and experiences for your trip.
+          </p>
+
+          <a
+            href="https://klook.tpk.mx/YhYDIZ7q"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="button"
+          >
+            Explore Activities
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- AIRPORT TRANSFER -->
+
+      <div class="travel-card">
+
+        <img
+          src="airport-transfer.png"
+          alt="Airport transfer"
+          loading="lazy"
+        >
+
+        <div class="travel-content">
+
+          <h3>Airport Transfer</h3>
+
+          <p>
+            Find convenient airport transfer options for your journey.
+          </p>
+
+          <a
+            href="https://tpk.mx/v0Tm5uv5"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="button"
+          >
+            Find Transfer
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+
+  <section class="section" id="products">
+
+    <div class="section-title">
+
+      <h2>Useful Products</h2>
+
+      <p>
+        Practical products selected for travel, mobile use and everyday needs. Read the buying tips above before visiting a third-party store.
+      </p>
+
+    </div>
+
+
+
+    <!-- PRODUCT BUYING GUIDE -->
+    <div class="about-grid" id="product-guide" style="margin-bottom: 32px;">
+
+      <div class="about-box">
+        <h3>Travel Essentials</h3>
+        <p>
+          When choosing luggage, travel bags or organizers, check the size, weight, material,
+          compartments and whether the item meets your airline's baggage requirements.
+        </p>
+        <p>
+          A useful travel product should solve a real problem without adding unnecessary weight
+          to your luggage.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Travel Technology</h3>
+        <p>
+          For chargers, adapters, phone holders and other travel technology, check device
+          compatibility, charging standards, dimensions and safety information before buying.
+        </p>
+        <p>
+          If you use a product internationally, make sure it works with the devices and power
+          standards you expect to use during your trip.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Check Before You Buy</h3>
+        <p>
+          Compare the final price, product specifications, seller information, customer reviews,
+          delivery time and return conditions. A low advertised price may not be the final cost.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Product Information</h3>
+        <p>
+          The products shown below are offered by third-party online stores. Prices, ratings,
+          availability and delivery conditions can change. Always confirm the current information
+          on the seller's website before placing an order.
+        </p>
+      </div>
+
+    </div>
+
+    <h3 class="product-list-heading">Current Product Picks</h3>
+
+    <div class="product-grid">
+
+
+      <!-- PRODUCT 1 -->
+
+      <div class="product-card">
+
+        <img
+          src="temu-magnetic-case-2.png"
+          alt="Magnetic Phone Case"
+          loading="lazy"
+        >
+
+        <div class="product-content">
+
+          <h3>
+            Magnetic Phone Case
+          </h3>
+
+          <div class="price">
+            €0.43
+          </div>
+
+          <div class="rating">
+            ★ 4.7
+          </div>
+
+          <p>
+            Protective magnetic phone case.
+          </p>
+
+          <a
+            href="https://temu.to/k/ep04uxy082y"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="product-button"
+          >
+            View Product
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 2 -->
+
+      <div class="product-card">
+
+        <img
+          src="temu-magnetic-phone-case.png"
+          alt="Magnetic Protective Phone Case"
+          loading="lazy"
+        >
+
+        <div class="product-content">
+
+          <h3>
+            Magnetic Protective Phone Case
+          </h3>
+
+          <div class="price">
+            €0.50
+          </div>
+
+          <div class="rating">
+            ★ 4.5
+          </div>
+
+          <p>
+            Protective case with magnetic design.
+          </p>
+
+          <a
+            href="https://temu.to/k/ebvj344i80l"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="product-button"
+          >
+            View Product
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 3 -->
+
+      <div class="product-card">
+
+        <img
+          src="temu-one-hand-phone-holder.png"
+          alt="One-Hand Phone Holder"
+          loading="lazy"
+        >
+
+        <div class="product-content">
+
+          <h3>
+            One-Hand Phone Holder
+          </h3>
+
+          <div class="price">
+            €0.29
+          </div>
+
+          <div class="rating">
+            ★ 4.7
+          </div>
+
+          <p>
+            Convenient phone holder for easier one-hand use.
+          </p>
+
+          <a
+            href="https://temu.to/k/evsg7kjmgwm"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="product-button"
+          >
+            View Product
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 4 -->
+
+      <div class="product-card">
+
+        <img
+          src="temu-samsung-magnetic-case.png"
+          alt="Samsung Magnetic Phone Case"
+          loading="lazy"
+        >
+
+        <div class="product-content">
+
+          <h3>
+            Samsung Magnetic Phone Case
+          </h3>
+
+          <div class="price">
+            €0.31
+          </div>
+
+          <div class="rating">
+            ★ 4.6
+          </div>
+
+          <p>
+            Magnetic protective phone case for Samsung devices.
+          </p>
+
+          <a
+            href="https://temu.to/k/ediw7dul9xl"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="product-button"
+          >
+            View Product
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <h2>
+      Travel Smarter
+    </h2>
+
+    <p>
+      Explore useful travel services, products and online offers with RediNexa.
+    </p>
+
+    <a href="#travel" class="button">
+      Explore Travel
+    </a>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-title">
+      <h2>About RediNexa</h2>
+      <p>Practical travel information, useful products and online services in one place.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>What RediNexa Does</h3>
+        <p>
+          RediNexa is designed to help visitors discover useful travel services and practical
+          products. We organize information into simple sections so you can compare options before
+          visiting a partner website.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Our Travel Focus</h3>
+        <p>
+          We focus on practical parts of a journey such as flights, mobile connectivity, airport
+          transfers and activities. Our guides explain what to check before you make a booking.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Product Information</h3>
+        <p>
+          We also highlight selected products that may be useful for travel and everyday life.
+          Product information is provided to help you decide what to check before buying from a
+          third-party store.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Independent Information</h3>
+        <p>
+          RediNexa is not the airline, eSIM provider, activity operator, airport transfer company
+          or online marketplace shown through our partner links. Prices, availability, policies
+          and services are controlled by the relevant third-party provider.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Why We Provide Guides</h3>
+        <p>
+          We believe visitors should have useful information before clicking a booking or shopping
+          link. Our goal is to make common travel decisions easier to understand.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Keeping Information Useful</h3>
+        <p>
+          Travel prices, schedules, product availability and provider policies can change. Always
+          check the latest details on the relevant provider's website before making a purchase or
+          booking.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-box" style="margin-top: 24px;">
+      <h3>Affiliate Disclosure</h3>
+      <p>
+        Some links on RediNexa are affiliate links. If you use an eligible partner link and make
+        a booking or purchase, RediNexa may receive a commission at no additional cost to you.
+        Affiliate relationships do not guarantee that a particular service or product is suitable
+        for every visitor.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+      <p>Helpful answers about using RediNexa.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3>What is RediNexa?</h3>
+        <p>
+          RediNexa is a website that brings together practical travel information, selected
+          products and links to third-party online services.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does RediNexa sell flights or travel services directly?</h3>
+        <p>
+          No. RediNexa provides information and links to third-party providers. The actual booking,
+          payment, cancellation and customer service are handled by the provider.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How should I compare flights?</h3>
+        <p>
+          Compare the total cost, travel time, departure airport, baggage allowance, cancellation
+          rules and other important conditions instead of looking only at the advertised ticket price.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I choose a travel eSIM?</h3>
+        <p>
+          Check that your phone supports eSIM, compare destination coverage, data allowance,
+          validity, activation instructions and any hotspot restrictions.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are the product prices on RediNexa guaranteed?</h3>
+        <p>
+          No. Prices, ratings, stock and delivery information can change. Always confirm the
+          current information on the third-party seller's website.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does RediNexa receive commissions?</h3>
+        <p>
+          Some links may be affiliate links. If you make an eligible purchase or booking through
+          one of these links, RediNexa may receive a commission without increasing your price.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Who is responsible for my booking or order?</h3>
+        <p>
+          The third-party provider or seller is responsible for the transaction, including payment,
+          delivery, cancellation, refunds and customer support according to its own terms.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can I contact RediNexa?</h3>
+        <p>
+          Use the Contact page to send a message to RediNexa.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-text">
+    <strong>🍪 We use cookies</strong>
+    <span>Necessary cookies keep RediNexa working. Optional cookies help us improve the website.</span>
+  </div>
+
+  <div class="cookie-actions">
+    <button id="cookie-reject">Reject</button>
+    <button id="cookie-settings">Settings</button>
+    <button id="cookie-accept">Accept all</button>
+  </div>
+</div>
+  <footer>
+
+    <div class="footer-container">
+
+
+      <div>
+
+        <h3>
+          RediNexa
+        </h3>
+
+        <p>
+          Travel, useful products and online services in one place.
+        </p>
+
+        <p>
+          RediNexa may receive commissions from some affiliate links.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h3>
+          Information
+        </h3>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="affiliate-disclosure.html">
+          Affiliate Disclosure
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+  
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const accept = document.getElementById("cookie-accept");
+  const reject = document.getElementById("cookie-reject");
+  const settings = document.getElementById("cookie-settings");
+
+  if (!banner || !accept || !reject || !settings) {
+    return;
+  }
+
+  function saveConsent(value) {
+    document.cookie =
+      "redinexa_cookie_consent=" +
+      encodeURIComponent(value) +
+      "; Max-Age=15552000; Path=/; SameSite=Lax; Secure";
+
+    banner.style.display = "none";
+  }
+
+  function hasConsent() {
+    return document.cookie
+      .split("; ")
+      .some(function (row) {
+        return row.startsWith("redinexa_cookie_consent=");
+      });
+  }
+
+  if (hasConsent()) {
+    banner.style.display = "none";
+  }
+
+  accept.addEventListener("click", function () {
+    saveConsent("accepted");
+  });
+
+  reject.addEventListener("click", function () {
+    saveConsent("rejected");
+  });
+settings.onclick = function () {
+  alert(
+    "Cookie Settings\n\n" +
+    "Necessary cookies: ON\n" +
+    "Optional cookies: OFF"
+  );
+};
+  
+
+});
+</script>
 </body>
 </html>
